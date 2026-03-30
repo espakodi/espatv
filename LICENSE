@@ -1,0 +1,73 @@
+EspaTV — Addon para Kodi
+Copyright (C) 2024-2026  RubénSDFA1labernt
+(El copyright inicia en 2024 debido a que EspaTV integra código e ideas de proyectos previos).
+
+================================================================================
+                          AVISO DE ATRIBUCIÓN (NOTICE)
+================================================================================
+
+Este software ha sido desarrollado por RubénSDFA1labernt, a excepción de las partes de terceros indicadas en la sección de EXCEPCIONES.
+El código fuente original está disponible en:
+  - https://github.com/espakodi   (Repositorio principal de EspaTV)
+  - https://github.com/fullstackcurso
+  - https://github.com/loioloio
+
+Si redistribuyes o modificas este código, estás OBLIGADO/A a:
+
+  1. Mantener TODAS las cabeceras de copyright y avisos de autoría en cada archivo.
+  2. Incluir esta licencia y aviso de atribución completo.
+  3. Indicar claramente qué archivos has modificado y la fecha de modificación.
+  4. Enlazar al repositorio original del autor.
+
+Si los cambios introducidos no son lo suficientemente significativos como para
+constituir una obra derivada independiente, te rogamos que contribuyas al
+proyecto original en lugar de fragmentar el desarrollo y la comunidad.
+
+Se planea crear versiones para otros países y addons especializados en funciones
+concretas, por lo que se agradece la colaboración.
+
+Las funcionalidades consideradas útiles para otros desarrolladores cuentan con una API.
+
+================================================================================
+                       LICENCIA GPL-2.0-or-later
+================================================================================
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Full license text: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+================================================================================
+                              EXCEPCIONES
+================================================================================
+
+El archivo dm_gujal.py contiene código derivado del proyecto
+plugin.video.dailymotion_com por Gujal00 y se distribuye bajo GPL-3.0.
+Consulta la cabecera de dicho archivo para más detalles.
+
+================================================================================
+                      AGRADECIMIENTOS Y COMUNIDAD
+================================================================================
+
+A través de los canales oficiales del proyecto (como Telegram) se comparte, se debate y se da visibilidad
+constantemente a los distintos proyectos, repositorios y creadores que
+sirven de inspiración o resultan de interés.
+
+Aunque no se copie el código directamente, si se utiliza la lógica o las ideas del proyecto, 
+se considera una buena práctica mencionar el proyecto original y darle visibilidad.
+
+Si crees que este proyecto está inspirado en uno tuyo, por favor, ponte en contacto con el autor,
+seguramente ha sido un descuido o se ha conocido a través de terceros.
+El autor es muy respetuoso con el trabajo ajeno
+y no es su intención apropiarse de ideas ajenas ni enfadar a otros desarrolladores.

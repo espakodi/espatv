@@ -1,0 +1,562 @@
+{
+  "tv_nacional": {
+    "name": "[COLOR red]TV España[/COLOR]",
+    "icon": "DefaultTVShows.png",
+    "plot": "Canales oficiales de cadenas de televisión españolas.",
+    "channels": [
+      {
+        "username": "lasexta",
+        "name": "laSexta"
+      },
+      {
+        "username": "ATRESPlayer",
+        "name": "ATRESPlayer"
+      },
+      {
+        "username": "PrTelecinco",
+        "name": "Telecinco"
+      },
+      {
+        "username": "MiteleFAVORITA",
+        "name": "Mediaset España"
+      },
+      {
+        "username": "rtve",
+        "name": "RTVE+"
+      },
+      {
+        "username": "rtveplus",
+        "name": "RTVE+ Archivo"
+      },
+      {
+        "username": "myRTVE",
+        "name": "myRTVE"
+      },
+      {
+        "username": "rtvehd",
+        "name": "RTVE Movie HD"
+      },
+      {
+        "username": "televisionvalladolidcanal48",
+        "name": "TV Valladolid Canal 48"
+      },
+      {
+        "username": "seriesxd",
+        "name": "MasterChef España"
+      }
+    ]
+  },
+  "noticias": {
+    "name": "[COLOR orange]Noticias[/COLOR]",
+    "icon": "DefaultRecentlyAddedEpisodes.png",
+    "plot": "Medios de comunicación, noticias y actualidad en español.",
+    "channels": [
+      {
+        "username": "france24espanol",
+        "name": "FRANCE 24 Español"
+      },
+      {
+        "username": "DW_Espanol",
+        "name": "DW (Español)"
+      },
+      {
+        "username": "euronews-es",
+        "name": "euronews (en español)"
+      },
+      {
+        "username": "espanadiario",
+        "name": "España Diario"
+      },
+      {
+        "username": "infolivetvspanish",
+        "name": "InfoLive TV Spanish"
+      },
+      {
+        "username": "businessinsider",
+        "name": "Business Insider España"
+      },
+      {
+        "username": "correoandalucia",
+        "name": "El Correo de Andalucía"
+      },
+      {
+        "username": "tribunaespana",
+        "name": "La Tribuna de España"
+      },
+      {
+        "username": "hablando-claro",
+        "name": "Hablando Claro"
+      },
+      {
+        "username": "patriaypolitica",
+        "name": "Patria y Política de España"
+      },
+      {
+        "username": "AntiNoticias",
+        "name": "AntiNoticias"
+      },
+      {
+        "username": "ImpactoDiario",
+        "name": "Impacto Diario"
+      },
+      {
+        "username": "buzz60latino",
+        "name": "Buzz60 Latino"
+      }
+    ]
+  },
+  "deportes": {
+    "name": "[COLOR lime]Deportes[/COLOR]",
+    "icon": "DefaultSets.png",
+    "plot": "Fútbol, motor, lucha y más deporte.",
+    "channels": [
+      {
+        "username": "fcbarcelona",
+        "name": "FC Barcelona"
+      },
+      {
+        "username": "Spanish-Football",
+        "name": "Spanish Football"
+      },
+      {
+        "username": "lubomir-mitev",
+        "name": "Spanish La Liga"
+      },
+      {
+        "username": "marcausa",
+        "name": "MARCA"
+      },
+      {
+        "username": "FCTelevision",
+        "name": "FCTelevision"
+      },
+      {
+        "username": "BarcelonaWorldRace",
+        "name": "Barcelona World Race"
+      },
+      {
+        "username": "runnersworldesp",
+        "name": "Runner's World España"
+      },
+      {
+        "username": "motogp",
+        "name": "MotoGP"
+      },
+      {
+        "username": "CanalPlusF1",
+        "name": "CANAL+ F1"
+      },
+      {
+        "username": "SaveTheWWE",
+        "name": "Spanish Wrestling"
+      },
+      {
+        "username": "porque.futbol",
+        "name": "¿Por qué fútbol?"
+      },
+      {
+        "username": "samvn.deportes163",
+        "name": "SamVN Deportes"
+      }
+    ]
+  },
+  "motor": {
+    "name": "[COLOR gold]Motor[/COLOR]",
+    "icon": "DefaultSets.png",
+    "plot": "Automovilismo, coches, motos y motor.",
+    "channels": [
+      {
+        "username": "Autobildspain",
+        "name": "Auto Bild España"
+      },
+      {
+        "username": "topgearespanol",
+        "name": "Top Gear España"
+      }
+    ]
+  },
+  "cine": {
+    "name": "[COLOR skyblue]Cine y Películas[/COLOR]",
+    "icon": "DefaultMovies.png",
+    "plot": "Películas, cine clásico, westerns y cortometrajes.",
+    "channels": [
+      {
+        "username": "CastellanoCineBox",
+        "name": "Castellano Cine Box"
+      },
+      {
+        "username": "Cine.Celluloid",
+        "name": "Cine Celluloid"
+      },
+      {
+        "username": "Cine.Universer",
+        "name": "Cine Universe"
+      },
+      {
+        "username": "MonoCine",
+        "name": "Mono Cine"
+      },
+      {
+        "username": "peliculadedrama",
+        "name": "Película de Drama"
+      },
+      {
+        "username": "CinedelOesteES",
+        "name": "Cine del Oeste Español"
+      },
+      {
+        "username": "Gateway.Movies",
+        "name": "CineShorts"
+      },
+      {
+        "username": "CinePeli",
+        "name": "Cine Peli (Latino)"
+      },
+      {
+        "username": "cine.latino.retro",
+        "name": "Cine Latino Retro"
+      },
+      {
+        "username": "CineFriki",
+        "name": "Cine Friki"
+      }
+    ]
+  },
+  "series": {
+    "name": "[COLOR yellow]Series y Drama[/COLOR]",
+    "icon": "DefaultTVShows.png",
+    "plot": "Series, dramas, novelas y entretenimiento.",
+    "channels": [
+      {
+        "username": "dramaespana",
+        "name": "Drama España"
+      },
+      {
+        "username": "WatchMojoEspanol",
+        "name": "WatchMojo Español"
+      },
+      {
+        "username": "SpanishTVSeries",
+        "name": "Spanish TV Series"
+      },
+      {
+        "username": "Prime.Plots",
+        "name": "Series Drama Español"
+      },
+      {
+        "username": "dramazone.plus",
+        "name": "DramaZone Plus"
+      },
+      {
+        "username": "YasakElmaEspanol",
+        "name": "Fruto Prohibido (Yasak Elma)"
+      },
+      {
+        "username": "KirliSepetiEspanol",
+        "name": "Trapos Sucios"
+      },
+      {
+        "username": "BinbirGeceEspanol",
+        "name": "Las Mil y Una Noches"
+      },
+      {
+        "username": "SerieSalvajeEspanol",
+        "name": "Serie Salvaje Español"
+      },
+      {
+        "username": "skamspain",
+        "name": "SKAM España"
+      },
+      {
+        "username": "cuentame1973-1981",
+        "name": "Cuéntame cómo pasó"
+      },
+      {
+        "username": "CanalNovelasES",
+        "name": "Canal Novelas Español"
+      },
+      {
+        "username": "laliespositospainweb",
+        "name": "Lali Espósito Spain"
+      },
+      {
+        "username": "ElHormiguero-Mx",
+        "name": "El Hormiguero Mx"
+      },
+      {
+        "username": "zeleb",
+        "name": "España Zeleb"
+      },
+      {
+        "username": "pekis-bfa663",
+        "name": "Series en Castellano"
+      },
+      {
+        "username": "TeleseriesSpain",
+        "name": "Teleseries Spain"
+      }
+    ]
+  },
+  "infantil": {
+    "name": "[COLOR deepskyblue]Infantil[/COLOR]",
+    "icon": "DefaultMusicVideos.png",
+    "plot": "Dibujos animados, series infantiles y contenido para niños.",
+    "channels": [
+      {
+        "username": "123GoSpanish",
+        "name": "123 Go! Spanish"
+      },
+      {
+        "username": "KidstvEspanol",
+        "name": "Kids TV Español Latino"
+      },
+      {
+        "username": "okidokido-espanol",
+        "name": "Okidokido Español"
+      },
+      {
+        "username": "IMP_Espanol",
+        "name": "IMP Español (Animación)"
+      },
+      {
+        "username": "BRBintEsp",
+        "name": "BRB España"
+      },
+      {
+        "username": "codigolyokoesp",
+        "name": "Código Lyoko España"
+      },
+      {
+        "username": "teamrocketlemas",
+        "name": "Team Rocket (Castellano)"
+      },
+      {
+        "username": "glitterforcedokidokiLATAM",
+        "name": "Glitter Force Doki Doki"
+      },
+      {
+        "username": "elpescadero2021",
+        "name": "Anime TV España"
+      },
+      {
+        "username": "kookootvspanish",
+        "name": "Koo Koo TV Spanish"
+      }
+    ]
+  },
+  "musica": {
+    "name": "[COLOR violet]Música[/COLOR]",
+    "icon": "DefaultMusicSongs.png",
+    "plot": "Música, radio, videoclips y contenido musical.",
+    "channels": [
+      {
+        "username": "los40",
+        "name": "LOS40 Spain"
+      },
+      {
+        "username": "canalmusictelevision",
+        "name": "Canal Music Television"
+      },
+      {
+        "username": "mas23tv",
+        "name": "Canal +23 Música"
+      },
+      {
+        "username": "kpopspain",
+        "name": "Kpop Spain"
+      },
+      {
+        "username": "KpopSpain01HD",
+        "name": "Kpop Spain HD"
+      },
+      {
+        "username": "MusicaUniversial",
+        "name": "Música Universal"
+      },
+      {
+        "username": "CaraBmusica",
+        "name": "Cara B Música"
+      },
+      {
+        "username": "MorningMusume_Spain",
+        "name": "Morning Musume Spain"
+      }
+    ]
+  },
+  "lifestyle": {
+    "name": "[COLOR coral]Lifestyle y Hogar[/COLOR]",
+    "icon": "DefaultMusicVideos.png",
+    "plot": "Cocina, salud, bienestar, moda y hogar.",
+    "channels": [
+      {
+        "username": "womenshealthesp",
+        "name": "Women's Health España"
+      },
+      {
+        "username": "SoYummyEspanol",
+        "name": "So Yummy Español"
+      },
+      {
+        "username": "BlogdeEspana",
+        "name": "Blog de España"
+      },
+      {
+        "username": "monicaravera66",
+        "name": "Cocina Vegetariana y Vegana"
+      },
+      {
+        "username": "yuki_cocina",
+        "name": "Yuki Cocina"
+      },
+      {
+        "username": "PratiksEspana",
+        "name": "Pratiks España (Trucos)"
+      },
+      {
+        "username": "sonoama4444",
+        "name": "Canal Cocina Fácil"
+      },
+      {
+        "username": "wamiz_espana",
+        "name": "Wamiz España"
+      },
+      {
+        "username": "cosasdeljardin",
+        "name": "Cosas del Jardín"
+      },
+      {
+        "username": "canalturismotv",
+        "name": "Canal Turismo TV"
+      },
+      {
+        "username": "speakupes",
+        "name": "Speak Up España"
+      }
+    ]
+  },
+  "gaming": {
+    "name": "[COLOR chartreuse]Gaming[/COLOR]",
+    "icon": "DefaultSets.png",
+    "plot": "Videojuegos, esports y gaming en español.",
+    "channels": [
+      {
+        "username": "MGG",
+        "name": "MGG Spain"
+      },
+      {
+        "username": "Spanish-ESports",
+        "name": "Spanish ESports"
+      },
+      {
+        "username": "BuzzVideosES",
+        "name": "Buzz Videos Spain"
+      }
+    ]
+  },
+  "cultura": {
+    "name": "[COLOR magenta]Cultura e Historia[/COLOR]",
+    "icon": "DefaultCountry.png",
+    "plot": "Documentales, historia, doblaje y contenido cultural.",
+    "channels": [
+      {
+        "username": "meteoredes",
+        "name": "Meteored España (Tiempo)"
+      },
+      {
+        "username": "WW2_LEGADOeHISTORIA",
+        "name": "WWII Legado e Historia"
+      },
+      {
+        "username": "DuermeConUnaHistoriaCansada",
+        "name": "Duerme con una Historia"
+      },
+      {
+        "username": "eldoblajeenandalucia",
+        "name": "El Doblaje en Andalucía"
+      },
+      {
+        "username": "museoHC",
+        "name": "Museo Hist. Computación"
+      },
+      {
+        "username": "RrokumTelevision",
+        "name": "Rrokum TV"
+      },
+      {
+        "username": "reelroom",
+        "name": "Reel Room ES"
+      },
+      {
+        "username": "estudiantesdeespanol",
+        "name": "Estudiantes de Español"
+      },
+      {
+        "username": "marktacherspain",
+        "name": "Mark Tacher España"
+      },
+      {
+        "username": "torosenespania",
+        "name": "Toros en España TV"
+      },
+      {
+        "username": "ailmadrid",
+        "name": "AIL Madrid (Español)"
+      },
+      {
+        "username": "produccion-conb",
+        "name": "España se escribe con B"
+      }
+    ]
+  },
+  "internacional_es": {
+    "name": "[COLOR cyan]Internacional en Español[/COLOR]",
+    "icon": "DefaultVideoPlaylists.png",
+    "plot": "Canales internacionales con contenido en español.",
+    "channels": [
+      {
+        "username": "france24espanol",
+        "name": "FRANCE 24 Español"
+      },
+      {
+        "username": "DW_Espanol",
+        "name": "DW (Español)"
+      },
+      {
+        "username": "euronews-es",
+        "name": "euronews (en español)"
+      },
+      {
+        "username": "axel-springer",
+        "name": "Axel Springer España"
+      },
+      {
+        "username": "WortenEspana",
+        "name": "Worten España"
+      },
+      {
+        "username": "marketscreener-espana",
+        "name": "Market Screener España"
+      },
+      {
+        "username": "sdt_espanol",
+        "name": "SDT España"
+      },
+      {
+        "username": "ImagenTelevision",
+        "name": "Imagen Televisión"
+      },
+      {
+        "username": "Guardian-Noticias2010",
+        "name": "El Guardian Noticias"
+      },
+      {
+        "username": "loccitaneEspana",
+        "name": "L'Occitane España"
+      },
+      {
+        "username": "movie.trending23",
+        "name": "Movie Trending ES"
+      }
+    ]
+  }
+}
