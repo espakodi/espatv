@@ -22,7 +22,9 @@ Repositorio oficial del addon **EspaTV** para Kodi. Permite instalar y actualiza
 2. En Kodi, ve a **Ajustes** > **Addons** > **Instalar desde archivo ZIP**
 3. Navega hasta el archivo descargado y selecciónalo
 
-![Características del addon](imagenes/caracteristicas.png)
+<p align="left">
+  <img src="imagenes/caracteristicas.png" alt="Características del addon">
+</p>
 
 ## Contacto y Soporte
 
