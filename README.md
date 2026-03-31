@@ -24,12 +24,17 @@ Repositorio oficial del addon **EspaTV** para Kodi. Permite instalar y actualiza
 
 ## Características del addon
 
-- TDT en directo
-- RTVE a la carta
-- Búsqueda en Dailymotion y YouTube
-- Radio y podcast
-- Catálogo de vídeos en castellano
-- Reproduce vídeos desde enlaces
+- Canales en directo
+- TV a la carta
+- Búsqueda global de vídeo
+- Catálogo multimedia en castellano
+- Emisoras de radio y podcasts
+- Reproductor de enlaces universal
+- Agenda deportiva
+- Previsión meteorológica
+- Lector de noticias
+- Guía de programación (EPG)
+- Grabación y soporte PVR
 - Y mucho más...
 
 ## Aviso Legal
@@ -40,6 +45,8 @@ Este addon no aloja ningún contenido. Actúa como buscador y explorador de cont
 
 - GitHub: [github.com/espakodi](https://github.com/espakodi)
 - Telegram: [t.me/espakodi](https://t.me/espakodi)
+
+---
 
 > [!NOTE]
 > **Sobre la Creación de Contenido y Legalidad del Addon**  
