@@ -1,5 +1,7 @@
 # EspaTV - Repositorio para Kodi
 
+![Animación Logo EspaTV](Animacion_Logo_EspaTV.mp4)
+
 ## Descripción
 
 Repositorio oficial del addon **EspaTV** para Kodi. Permite instalar y actualizar automáticamente el addon desde Kodi.
