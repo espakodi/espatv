@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <addons>
-<addon id="plugin.video.espatv" name="EspaTV" version="1.1.0" provider-name="RubénSDFA1labernt">
+<addon id="plugin.video.espatv" name="EspaTV" version="2.0.0" provider-name="RubénSDFA1laberot">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
@@ -10,8 +10,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Addon todo en uno para contenido en castellano</summary>
-    <description lang="es">TDT, RTVE a la carta, búsqueda en YouTube y Dailymotion, catálogo de vídeos, radio, podcasts, reproducción de enlaces, noticias, meteorología, agenda deportiva y mucho más.</description>
+    <summary lang="es">Todo en uno para contenido en castellano</summary>
+    <description lang="es">TDT, RTVE a la carta, búsqueda en YouTube y Dailymotion, catálogo de vídeos, radio, podcasts, reproducción de enlaces, noticias, meteorología, agenda deportiva y mucho más.[CR]Privacidad: Para planificar el desarrollo, compatibilidad y soporte del addon, registra de forma anónima: sistema operativo, versión del addon, versión de Kodi, nombre del addon, fecha del último uso (para descartar datos viejos) e identificador de instalación (para no contar la misma instalación varias veces). No se recopilan IPs ni datos personales. Más info: github.com/espakodi</description>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <website>https://github.com/espakodi</website>
@@ -20,15 +20,19 @@
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
+    <news>v2.0.0
+- Categoria de documentales en espanol (Internet Archive)
+- Submenu de accesibilidad: modo de color, negrita y simbolos
+- Mejoras y correcciones varias</news>
   </extension>
 </addon>
 
 <addon id="repository.espatv" name="EspaTV Repository" version="1.0.0" provider-name="RubénSDFA1labernt">
     <extension point="xbmc.addon.repository" name="EspaTV Repository">
         <dir>
-            <info compressed="false">https://espakodi.github.io/espatv/addons.xml</info>
-            <checksum>https://espakodi.github.io/espatv/addons.xml.md5</checksum>
-            <datadir zip="true">https://espakodi.github.io/espatv/</datadir>
+            <info compressed="false">https://fullstackcurso.github.io/espatv/addons.xml</info>
+            <checksum>https://fullstackcurso.github.io/espatv/addons.xml.md5</checksum>
+            <datadir zip="true">https://fullstackcurso.github.io/espatv/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
