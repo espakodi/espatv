@@ -1,47 +1,46 @@
-# EspaTV - Repositorio para Kodi
+# EspaTV — Repositorio para Kodi
 
-## Verificación de integridad EspaTV 2.0.0
+Addon todo en uno para contenido en castellano: TDT, RTVE a la carta, YouTube, Dailymotion, radio, podcasts, top películas y series, filmoteca, prensa, música, documentales, audiolibros, noticias, meteorología, agenda deportiva, mercados, precio de la luz, gasolineras, tráfico (DGT) y mucho más.
 
-- MD5:    592e69d91748d18506c6b141fa2aa985
-- SHA256: 82128a584d0f8d10fdd127405f3af8322ae58b9d402389075374b696c71b43de
+## Fuente e instrucciones de instalación
 
-## Descripción
+[https://espakodi.github.io/espatv/](https://espakodi.github.io/espatv/)
 
-Repositorio oficial del addon **EspaTV** para Kodi. Permite instalar y actualizar automáticamente el addon desde Kodi.
+## Instalación paso a paso
 
-## Instalación
+### Opción 1 — Desde repositorio (recomendado, recibe actualizaciones automáticas)
 
-### Opción 1: Desde el Administrador de Archivos de Kodi (Recomendado)
+1. En Kodi ve a **Ajustes** → **Administrador de archivos** → **Añadir fuente**
+2. Introduce esta URL exacta: `https://espakodi.github.io/espatv/`
+3. Asígnale un nombre, por ejemplo `espatv`, y pulsa OK
+4. Ve a **Add-ons** → icono de paquete (esquina superior izquierda) → **Instalar desde archivo ZIP**
+   > Si aparece el aviso de seguridad: **Ajustes** → **Sistema** → **Add-ons** → activar **Orígenes desconocidos**
+5. Selecciona la fuente `espatv` → `repository.espatv-1.0.0.zip`
+6. Cuando aparezca la notificación "Add-on instalado", ve a **Instalar desde repositorio** → **EspaTV Repository** → **Add-ons de vídeo** → **EspaTV** → **Instalar**
 
-1. Abre Kodi y ve a **Ajustes** > **Administrador de archivos** > **Añadir fuente**
-2. Introduce la URL: `https://espakodi.github.io/espatv/`
-3. Ponle un nombre (por ejemplo, `EspaTV Repo`)
-4. Ve a **Ajustes** > **Addons** > **Instalar desde archivo ZIP**
-5. Selecciona la fuente `EspaTV Repo` y elige `repository.espatv-1.0.0.zip`
-6. Espera la notificación de instalación
-7. Ve a **Instalar desde repositorio** > **EspaTV Repository** > **Addons de vídeo** > **EspaTV**
+### Opción 2 — Desde ZIP (sin actualizaciones automáticas)
 
-### Opción 2: Instalación manual mediante archivo ZIP
+1. Descarga el `.zip` desde [github.com/fullstackcurso/espatv/releases](https://github.com/fullstackcurso/espatv/releases)
+2. En Kodi ve a **Add-ons** → icono de paquete → **Instalar desde archivo ZIP** → selecciona el archivo
 
-1. Descarga `repository.espatv-1.0.0.zip` desde este repositorio
-2. En Kodi, ve a **Ajustes** > **Addons** > **Instalar desde archivo ZIP**
-3. Navega hasta el archivo descargado y selecciónalo
+## Verificación de integridad — v2.0.0
+
+```
+MD5:    592e69d91748d18506c6b141fa2aa985
+SHA256: 82128a584d0f8d10fdd127405f3af8322ae58b9d402389075374b696c71b43de
+```
 
 <p align="left">
   <img src="imagenes/caracteristicas.png" alt="Características del addon">
 </p>
 
-## Contacto y Soporte
+## Contacto
 
-- GitHub: [github.com/espakodi](https://github.com/espakodi)
-- Telegram: [t.me/espakodi](https://t.me/espakodi)
+- Telegram: [t.me/rubensdfa1laberot/?direct](https://t.me/rubensdfa1laberot/?direct)
 
----
-
+&nbsp;
 > [!NOTE]
-> **Sobre la Creación de Contenido y Legalidad del Addon**  
-> EspaTV no aloja contenido ni vulnera ninguna medida de protección de derechos de autor. EspaTV es, legal y técnicamente, un agregador, buscador, y explorador multimedia de fuentes públicas, gratuitas y de libre emisión disponibles en internet.
-
----
+> **Legalidad:**
+> EspaTV no aloja contenido ni elude protecciones de derechos de autor. Es un agregador que enlaza a fuentes públicas y gratuitas disponibles en internet.
 
 ![Animación Logo EspaTV](imagenes/Animacion_Logo_EspaTV.gif)
