@@ -2,8 +2,8 @@
     "messages": [
         {
             "id": "welcome_espatv_v2",
-            "title": "¡Bienvenido a EspaTV! - La última versión es la 2.8.0",
-            "text": "Web:\n- loiolo.io\n\nTelegram:\n- t.me/espadaily\n\nContacto:\n- t.me/rubensdfa1laberot/?direct",
+            "title": "¡Bienvenid@ a EspaTV!",
+            "text": "La última versión es la 2.8.0\n\nWebs:\n- loiolo.io\n- https://espakodi.github.io/espatv/\n\nTelegram:\n- t.me/espadaily\n\nContacto:\n- t.me/rubensdfa1laberot/?direct",
             "color": "yellow",
             "date": "2026-06-02"
         }
