@@ -20,7 +20,7 @@ Addon todo en uno para contenido en castellano: TDT, RTVE a la carta, YouTube, D
 
 ### Opción 2 — Desde ZIP (sin actualizaciones automáticas)
 
-1. Descarga el `.zip` desde [github.com/fullstackcurso/espatv/releases](https://github.com/fullstackcurso/espatv/releases)
+1. Descarga el `.zip` desde [github.com/espakodi0/espatv/releases](https://github.com/espakodi/espatv/releases)
 2. En Kodi ve a **Add-ons** → icono de paquete → **Instalar desde archivo ZIP** → selecciona el archivo
 
 ## Verificación de integridad — v2.8.0
