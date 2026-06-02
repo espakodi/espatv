@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.espatv" name="EspaTV Repository" version="1.0.0" provider-name="RubénSDFA1labernt">
+<addon id="repository.espatv" name="EspaTV Repository" version="1.0.0" provider-name="RubénSDFA1laberot">
     <extension point="xbmc.addon.repository" name="EspaTV Repository">
         <dir>
             <info compressed="false">https://fullstackcurso.github.io/espatv/addons.xml</info>
