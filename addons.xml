@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <addons>
-<addon id="plugin.video.espatv" name="EspaTV" version="2.0.0" provider-name="RubénSDFA1laberot">
+<addon id="plugin.video.espatv" name="EspaTV" version="2.8.0" provider-name="RubénSDFA1laberot">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
@@ -9,25 +9,27 @@
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Todo en uno para contenido en castellano</summary>
-    <description lang="es">TDT, RTVE a la carta, búsqueda en YouTube y Dailymotion, catálogo de vídeos, radio, podcasts, reproducción de enlaces, noticias, meteorología, agenda deportiva y mucho más.[CR]Privacidad: Para planificar el desarrollo, compatibilidad y soporte del addon, registra de forma anónima: sistema operativo, versión del addon, versión de Kodi, nombre del addon, fecha del último uso (para descartar datos viejos) e identificador de instalación (para no contar la misma instalación varias veces). No se recopilan IPs ni datos personales. Más info: github.com/espakodi</description>
+    <description lang="es">TDT, RTVE a la carta, búsqueda en YouTube y Dailymotion, catálogo de vídeos, radio, podcasts, reproducción de enlaces, noticias, meteorología, agenda deportiva y mucho más.</description>
+    <disclaimer lang="es">Este es un software gratuito. Si te han cobrado por él, te han estafado.[CR][CR]Este addon funciona exclusivamente como un buscador e indexador de enlaces y transmisiones públicas disponibles en Internet. Los Propietarios y Distribuidores de este Add-On no alojan, proveen ni distribuyen contenido de terceros protegido por derechos de autor, ni tienen afiliación con las plataformas enlazadas. La reproducción del contenido es responsabilidad exclusiva de los servidores externos que lo alojan y del uso que el usuario haga de ellos.[CR][CR]Privacidad: Para planificar el desarrollo, compatibilidad y soporte del addon, registra de forma anónima: sistema operativo, versión del addon, versión de Kodi, nombre del addon, fecha del último uso (para descartar datos viejos de más de 30 días) e identificador de instalación (para no contar la misma instalación varias veces). No se recopilan IPs ni datos personales. Más info: github.com/espakodi</disclaimer>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
-    <website>https://github.com/espakodi</website>
+    <website>https://espatv.github.io</website>
     <source>https://github.com/espakodi</source>
+    <forum>https://t.me/espadaily</forum>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v2.0.0
-- Categoria de documentales en espanol (Internet Archive)
-- Submenu de accesibilidad: modo de color, negrita y simbolos
-- Mejoras y correcciones varias</news>
+    <news>v3.0.0
+- Atajos en "¿Dónde buscar?": personalizables, reordenables y renombrables
+- Escribe desde el móvil o PC en más puntos del addon</news>
   </extension>
 </addon>
 
-<addon id="repository.espatv" name="EspaTV Repository" version="1.0.0" provider-name="RubénSDFA1labernt">
+<addon id="repository.espatv" name="EspaTV Repository" version="1.0.0" provider-name="RubénSDFA1laberot">
     <extension point="xbmc.addon.repository" name="EspaTV Repository">
         <dir>
             <info compressed="false">https://fullstackcurso.github.io/espatv/addons.xml</info>
