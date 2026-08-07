@@ -1,11 +1,11 @@
 {
     "messages": [
         {
-            "id": "welcome_espatv_v2",
-            "title": "¡Bienvenid@ a EspaTV!",
-            "text": "La última versión es la 2.8.0\n\nWebs:\n- loiolo.io\n- https://espakodi.github.io/espatv/\n\nTelegram:\n- t.me/espadaily\n\nContacto:\n- t.me/rubensdfa1laberot/?direct",
+            "id": "welcome_espatv_v3",
+            "title": "Apps en t.me/espakodi",
+            "text": "Aplicaciones para Android y Windows en t.me/espakodi",
             "color": "yellow",
-            "date": "2026-06-02"
+            "date": "2026-08-07"
         }
     ]
 }
