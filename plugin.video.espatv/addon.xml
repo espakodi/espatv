@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.espatv" name="EspaTV" version="2.8.0" provider-name="RubénSDFA1laberot">
+<addon id="plugin.video.espatv" name="EspaTV" version="2.9.0" provider-name="RubénSDFA1laberot">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
@@ -22,8 +22,21 @@
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v3.0.0
-- Atajos en "¿Dónde buscar?": personalizables, reordenables y renombrables
-- Escribe desde el móvil o PC en más puntos del addon</news>
+    <news>v2.9.0
+- Addons EspaKodi: nuevos accesos "EspaKodi en la web" y "Última versión EspaKodi app"
+- El catálogo agrupa Verano, Educación y Divulgación, Cocina Española y Museo del Meme bajo una cabecera "Vídeos"
+- Los vídeos y canales de esa sección salen de búsquedas automáticas por categoría y de recopilatorios de foros y playlists copiados tal cual. Que algo aparezca ahí no implica afinidad, preferencia, promoción ni vínculo alguno con sus autores
+- Accesibilidad: la negrita viene activada de serie
+- Los nombres de canal de Dailymotion ignoraban el color y la negrita de accesibilidad; ya no
+- Festivos: el bloque del año siguiente mostraba las fechas del año en curso. Ahora se calculan y salen bien en cualquier año
+- Festivos: la lista salía vacía durante la semana previa a cada festivo
+- Los festivos que caen en domingo mantienen su fecha oficial y lo indican en la lista
+- Calendario astronómico: equinoccios y solsticios calculados, y eclipses corregidos. El total de Sol de 2026 es el 12 de agosto y su totalidad cruza el norte de España
+- Gasolineras: cuando el servidor del Ministerio rechaza la conexión ahora lo dice, en vez de mandarte a revisar tu red
+- Precio de la luz: si REE no responde, ya no tarda el doble en decirlo
+- Clasificaciones deportivas: arreglado el error al consultar ESPN
+- Windows: las grabaciones y Dailymotion ya no abren una ventana negra de consola
+- Mando web: al cerrarlo ya no queda una conexión abierta de fondo
+- Prevenido un fallo de arranque en Kodi 21 con acentos en líneas largas</news>
   </extension>
 </addon>
