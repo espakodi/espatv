@@ -1,6 +1,13 @@
 {
     "messages": [
         {
+            "id": "espatv_3_0_0",
+            "title": "[COLOR yellow]EspaTV 3.0.0 ya disponible[/COLOR]",
+            "text": "[B]Cómo actualizar:[/B] se instala sola desde el repositorio. Si aún no la tienes, ve a Add-ons → Mis add-ons → Add-ons de vídeo → EspaTV → Actualizar.",
+            "color": "yellow",
+            "date": "2026-10-15"
+        },
+        {
             "id": "welcome_espatv_v4",
             "title": "[COLOR yellow]EspaKodi 0.1.2[/COLOR] & [COLOR gold]EKHorus 2.0.1[/COLOR]",
             "text": "[B][COLOR yellow]ESPAKODI 0.1.2 APP[/COLOR][/B]\nEnlace: [COLOR deepskyblue]https://espakodi.github.io/apk/[/COLOR]\nCódigos Downloader:\n • [COLOR skyblue]64 bits:[/COLOR] [B]5433357[/B]\n • [COLOR skyblue]32 bits:[/COLOR] [B]1208875[/B]\n\n[B][COLOR yellow]EKHORUS 2.0.1[/COLOR][/B]\nEnlace: [COLOR deepskyblue]https://espakodi.github.io/EKHorus/[/COLOR]\nCódigo Downloader: [B]2047082[/B]\n\n[COLOR grey]Fuente de este mensaje: Repositorio público de EspaTV.[/COLOR]",
