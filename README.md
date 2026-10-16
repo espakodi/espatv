@@ -26,8 +26,8 @@ Addon todo en uno para contenido en castellano: TDT, RTVE a la carta, YouTube, D
 ## Verificación de integridad — v3.0.0
 
 ```
-MD5:    179b466c22e1a6674d16ca560a47dac6
-SHA256: 311befdd038c4b3301ffcdbda409dd963cfaf4311c6feeee88f0a45f3963c0f7
+MD5:    6a65bfa3529086ea74fc58da7bd611db
+SHA256: c6a1a07c69dd34b3a7dcb39f87d775d96d70b1e11897b7737ac3eacbd7706b0b
 ```
 
 <p align="left">
