@@ -1,9 +1,9 @@
 {
     "messages": [
         {
-            "id": "espatv_3_0_0",
-            "title": "[COLOR yellow]EspaTV 3.0.0 ya disponible[/COLOR]",
-            "text": "[B]Cómo actualizar:[/B] se instala sola desde el repositorio. Si aún no la tienes, ve a Add-ons → Mis add-ons → Add-ons de vídeo → EspaTV → Actualizar.",
+            "id": "espatv_3_0_1",
+            "title": "[COLOR yellow]EspaTV 3.0.1 ya disponible[/COLOR]",
+            "text": "La última versión disponible de EspaTV es la 3.0.1.\n\nSi todavía no se ha descargado de forma automática, puedes actualizarla manualmente desde:\n[COLOR skyblue]Add-ons → Mis add-ons → Add-ons de vídeo → EspaTV → Actualizar[/COLOR]",
             "color": "yellow",
             "date": "2026-10-15"
         },
