@@ -23,11 +23,11 @@ Addon todo en uno para contenido en castellano: TDT, RTVE a la carta, YouTube, D
 1. Descarga el `.zip` desde [github.com/espakodi/espatv/releases](https://github.com/espakodi/espatv/releases)
 2. En Kodi ve a **Add-ons** → icono de paquete → **Instalar desde archivo ZIP** → selecciona el archivo
 
-## Verificación de integridad — v4.0.0
+## Verificación de integridad — v4.5.0
 
 ```
-MD5:    5688937e350018b5a08f3f825461d4a1
-SHA256: b35ce4936bc8cc7140d802415cbae709d02aea77fd542b27d4a8a63cd2ad451f
+MD5:    f06eec6b02a7c42fdbf8b11ee31144e8
+SHA256: 5a40b2b03ed34056276cdfd15759f2c176f3e045f926f9e07a927993e1bfe6ca
 ```
 
 <p align="left">
