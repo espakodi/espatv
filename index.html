@@ -671,7 +671,7 @@
             animation: heroLogoFloat 4.2s ease-in-out infinite;
         }
 
-        /* Ondas expansivas radar que emanan de todo el contorno del logo */
+        /* Efecto radar */
         .hero-mark::before,
         .hero-mark-wave {
             content: '';
@@ -728,7 +728,7 @@
             transition: transform 0.28s ease, filter 0.28s ease;
         }
 
-        /* Destello diagonal de luz (sheen de brillo) que recorre todo el logo suavemente */
+        /* Brillo logo */
         .hero-mark-inner::after {
             content: '';
             position: absolute;
@@ -756,7 +756,6 @@
             }
         }
 
-        /* Respiración suave en reposo */
         @keyframes heroLogoFloat {
             0%, 100% {
                 transform: translateY(0);
@@ -766,7 +765,6 @@
             }
         }
 
-        /* Hover: elevación, destello más vivo en todo el logo y pausa de flotación */
         .hero-mark:hover {
             transform: translateY(-4px) scale(1.08);
             animation-play-state: paused;
@@ -788,7 +786,6 @@
             filter: brightness(1.08);
         }
 
-        /* Píldora discreta al pasar el cursor */
         .hero-video-hint {
             position: absolute;
             bottom: -28px;
@@ -1896,7 +1893,7 @@
             height: 18px;
         }
 
-        /* Botón flotante Go To Top */
+        /* Botón scroll top */
         .btn-go-top {
             position: fixed;
             bottom: 24px;
@@ -1959,7 +1956,7 @@
             }
         }
     
-        /* Estilos específicos para la sección de instrucciones de EspaTV */
+        /* Instrucciones */
         .instruction-box {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -2208,7 +2205,7 @@
             color: var(--primary) !important;
         }
 
-        /* Botones Web y Telegram idénticos en propósito a ekskin con aspecto continuista */
+        /* Botones */
         .botones {
             display: flex;
             gap: 14px;
@@ -2318,7 +2315,7 @@
 </head>
 
 <body>
-    <!-- Topbar idéntica a espatv.github.io -->
+    <!-- Topbar -->
     <nav class="topbar" aria-label="Navegación principal">
         <a href="https://espatv.github.io/" class="topbar-brand" style="text-decoration: none;">
             <strong><span class="espa-text">Espa</span><em><svg class="kodi-k-inline" viewBox="0 0 24 24" fill="none">
@@ -2341,9 +2338,9 @@
                     </svg>odi</em></strong>
         </a>
 
-        <!-- Acciones de la barra superior (en móvil se repliegan en el menú desplegable) -->
+        <!-- Acciones barra superior -->
         <div class="topbar-actions" id="topbarActions">
-            <!-- Botones de acción rápida: Web y Telegram -->
+            <!-- Enlaces externos -->
             <a class="tb-btn" href="https://espatv.github.io/" title="Ir a la web principal de EspaKodi">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                 <span>Web</span>
@@ -2485,7 +2482,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section con la identidad de EspaTV -->
+    <!-- Hero -->
     <header class="hero">
         <div class="hero-inner">
             <button class="hero-mark icon-btn-video" data-video="https://espatv.github.io/media/espatv.mp4" aria-label="Ver vídeo de demostración de EspaTV" title="Ver vídeo de demostración de EspaTV">
@@ -2517,7 +2514,7 @@
 
     <main class="wrap" style="max-width: 900px;">
 
-        <!-- TARJETA 1: INSTALACIÓN DESDE REPOSITORIO -->
+        <!-- Instalación repositorio -->
         <article class="instruction-box">
             <div class="inst-card-head">
                 <div class="inst-card-badge">
@@ -2556,7 +2553,7 @@
             </ol>
         </article>
 
-        <!-- TARJETA 2: INSTALACIÓN DESDE ZIP MANUAL -->
+        <!-- Instalación manual ZIP -->
         <article class="instruction-box">
             <div class="inst-card-head">
                 <div class="inst-card-badge">
@@ -2600,7 +2597,7 @@
                 En Kodi: <strong>Add-ons</strong> &rarr; <strong>icono de paquete</strong> &rarr; <strong>Instalar desde archivo zip</strong> &rarr; selecciona el archivo descargado.
             </div>
 
-            <!-- Hashes de integridad solicitados por el usuario -->
+            <!-- Hashes de integridad -->
             <div style="margin: 22px 0;">
                 <div style="font-size: 0.92rem; font-weight: 600; color: var(--text); margin-bottom: 8px;">
                     Verificación de integridad (v4.5.0): los hashes criptográficos exactos del archivo ZIP de la release:
@@ -2617,7 +2614,6 @@
                 </div>
             </div>
 
-            <!-- Aviso ya tenías el addon instalado a mano -->
             <h3 class="inst-section-title" style="margin-top: 28px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="color: var(--primary);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/><circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/></svg>
                 Si ya tenías el addon instalado a mano
@@ -2626,7 +2622,6 @@
                 Kodi marca las instalaciones manuales y <strong>no las actualiza solas</strong>; para que empiece a recibir actualizaciones automáticas tienes que <strong>desinstalar el ZIP antiguo</strong> y repetir los pasos de arriba. Al instalar desde el repositorio, Kodi sustituye la copia anterior sin preguntarte nada.
             </div>
 
-            <!-- Zip para instalar el repositorio -->
             <h3 class="inst-section-title" style="margin-top: 28px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="color: var(--primary);"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                 Zip para instalar el repositorio
@@ -2642,12 +2637,11 @@
             </div>
         </article>
 
-        <!-- SECCIÓN 2: OTROS ADDONS DE ESPAKODI -->
+        <!-- Otros addons -->
         <section class="section-separator">
             <h2>Otros addons de EspaKodi</h2>
         </section>
 
-        <!-- Grid de tarjetas de addons -->
         <div class="grid">
 <div class="card reveal" data-icon="https://espatv.github.io/img/topzilla.jpg" data-name="TopZilla" data-sub="¿Qué vemos hoy?">
 <div class="card-top">
@@ -3140,7 +3134,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
 
     </main>
 
-    <!-- Modal de instalación para las tarjetas de addons -->
+    <!-- Modal instalación -->
     <div class="modal-overlay" id="modalOverlay" onclick="overlayClick(event)">
         <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modal-name">
             <div class="modal-head">
@@ -3161,7 +3155,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
         </div>
     </div>
 
-    <!-- Modal de vídeo/demo si existe -->
+    <!-- Modal vídeo -->
     <div class="video-overlay" id="videoOverlay" onclick="if(event.target===this)closeVideo()">
         <div class="video-dialog">
             <button class="video-close" onclick="closeVideo()" aria-label="Cerrar vídeo">
@@ -3174,21 +3168,22 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
         </div>
     </div>
 
-    <!-- Footer continuista idéntico a espatv.github.io -->
+    <!-- Footer -->
     <footer>
         &copy; <strong><span class="espa-text">Espa</span><em><svg class="kodi-k-inline" viewBox="0 0 24 24" fill="none">
                     <rect x="0" y="0" width="24" height="24" fill="url(#kodi-grad-inline)" mask="url(#k-mask-inline)" />
                 </svg>odi</em></strong><span class="footer-dot" aria-hidden="true"></span>Addons para Kodi en español<span class="footer-dot" aria-hidden="true"></span>Contacto: <a href="https://t.me/rubensdfa1laberot/?direct" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none; font-weight: 500;">@rubensdfa1laberot</a>
+        <p style="margin: 10px 0 0; font-size: 0.75rem; color: var(--text-mute); line-height: 1.5;">Legalidad: EspaTV no aloja contenido ni elude protecciones de derechos de autor. Es un agregador que enlaza a fuentes públicas y gratuitas disponibles en internet.</p>
     </footer>
 
-    <!-- Botón flotante Go To Top -->
+    <!-- Botón scroll top -->
     <button class="btn-go-top" id="btnGoTop" aria-label="Volver arriba" title="Volver arriba">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
 
-    <!-- Scripts de interactividad, temas, paletas, copiado, modal y auto-resolución de release -->
+    <!-- Scripts -->
     <script>
         (function () {
             var root = document.documentElement;
@@ -3372,7 +3367,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
         }
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
-        // Popup modal de vídeo lazy (carga diferida bajo demanda sin lag inicial)
+        // Modal vídeo
         var videoOverlay = document.getElementById('videoOverlay');
         var videoPlayer = document.getElementById('videoPlayer');
 
@@ -3407,7 +3402,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
             }
         });
 
-        // Botones de copia con feedback visual
+        // Copia al portapapeles
         var COPY_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
         var DONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>';
 
@@ -3432,7 +3427,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
             setTimeout(restore, 1800);
         }
 
-        // Animación de entrada de las tarjetas
+        // Animación de entrada
         var io = new IntersectionObserver(function (entries) {
             entries.forEach(function (e, i) {
                 if (e.isIntersecting) {
@@ -3443,7 +3438,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
         }, { threshold: 0.07 });
         document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-        // Fallback para imágenes de addons que no cargan (ej. GitHub raw con rate limit o 404)
+        // Fallback imágenes
         document.querySelectorAll('img.addon-icon[data-fallback-icon]').forEach(function(img) {
             var type = img.getAttribute('data-fallback-icon');
             var ICONS = {
@@ -3457,7 +3452,6 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
                 div.innerHTML = svgStr;
                 img.parentNode.replaceChild(div, img);
             });
-            // Si ya falló antes de que el handler se registrase (caché de fallo)
             if (img.complete && img.naturalWidth === 0) {
                 var div = document.createElement('div');
                 div.className = 'addon-icon addon-icon-fallback';
@@ -3466,7 +3460,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
             }
         });
 
-        // Auto-resolución de la última versión del zip de GitHub Releases para descarga directa
+        // Última release GitHub
         (function() {
             fetch('https://api.github.com/repos/espakodi/espatv/releases/latest')
                 .then(function(res) { return res.json(); })
@@ -3487,10 +3481,9 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
                     }
                 })
                 .catch(function(e) {
-                    // Si la API tiene rate limit o no hay red, el link por defecto v4.5.0 ya funciona perfectamente
                 });
         })();
-        // Menú hamburguesa y controles móviles de la topbar
+        // Menú móvil
         var burgerBtn = document.getElementById('burgerBtn');
         var topbarActions = document.getElementById('topbarActions');
         var mobShareBtn = document.getElementById('mobShareBtn');
@@ -3527,7 +3520,7 @@ Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95,
             });
         }
 
-        // Botón flotante Go To Top (optimizado para escritorio y móvil)
+        // Botón scroll top
         var btnGoTop = document.getElementById('btnGoTop');
         if (btnGoTop) {
             function updateGoTop() {
