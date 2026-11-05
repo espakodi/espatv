@@ -1,107 +1,3553 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark" data-palette="teal" class="a11y-large">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>EspaTV - Instalación</title>
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/268148019?v=4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspaTV · Instrucciones de instalación para Kodi</title>
+    <meta name="description"
+        content="Instrucciones completas para instalar el addon EspaTV en Kodi: instalación desde el repositorio con actualizaciones automáticas o desde archivo zip directo, resolución de problemas y catálogo de addons de EspaKodi.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#114a43">
+    <link rel="canonical" href="https://espakodi.github.io/espatv/">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABTVBMVEUAAAAAAAD97/D86+3+6ez///////7+///+//7//v7+/v/+/v7+/v3//f/+/f79/Pz++vr/8fH95uj876754eT62tvyzM7swMPzzU/ntLj/xBL/wBntqq3/ux7+vwb/uRn7vgH7vQD5vgD4vgD5vQL7vAH3vgH5vQD4vQH5vAL3vQH5vAD4vAH6uwD3vAD5tR34uwDgpaj4uQDwoyPalJnroBrokBzVhInRd3vagBfLZmvAYmjKbg+qX2K9TlTNTw+1VQ22OT+aQUO7LgWxJS2bNATGEx6oHibEERzCEhuMKS3CEBzCEBrAERnBEBvBEBrBEBnAEBvAEBrCDxm/EBvBDxrCDhvADxrBDhu/DxnBDRnADRqUJwSvFBy7ChS1DAuYFx21CROMIQCmDhWVFRyWFByUFRqUFByTFBuxBwuREhirBg+NFwSNEBSGCw0YMc4sAAAAAXRSTlMAQObYZgAAAt9JREFUeNqFU0uP2zYQJgpIovhw9tRDLt1KhkmJtGMEOXSBHNoiBWJEJpeEaNIWEPigSEKA/v9rR7tIrh0KQ4rz/jiD0Ereh9sQwzkNYbDRuTik2PXoBznXu+RNHG7DLYU4xDgMaRhcNK/y2HvnnHEuJXMD3evVgRPn+z4MqxwkP8m8EJgCg69PDhSewd7DXW/OffDr8WrcM9zFPjjI4+P/EBJCqFbvd1LUtdBaSq2FFFrWsFQlGyQroWt1H+dpHL9N87dxXuZxgr+73GnRbJECA9lMlJQ0o1meA8NZzku2aLlVTYPqvVBSTAWlJc4wLosSE1wwvJn2Qsi6RkrJWjULyTnjJb8STnlBKOWbUUtVy9/Rfl89Kr3grFw9RPMrZQTiYDpLSLMVqJaNAgUITQqOzelkaVnwTUGnGgoTkOS+kkpOuMQlmAGEnz1kw/PNDLXq7RbVbVVrtWxwnmNCrTltKIU0SzoBJJV4RI2U1VEtOS3BkHafaF6WBKLQRW53WlZIVFqo/YyLTc4yBsYMU4ACsxkCtHWF2hVYvUB1LMs4JxCfckIIHbetFM0eSSnkrh3/ZozCYutWAqP/jqKtxU6BggYkj8sIrzCO8zyPC6zxvryXEspbFYAOVdsA7u/u0zxP93dSNerFs9AKqcPxeFD6ILfTuPz5Vuu3/yzj9wYwOB7e6+MWedOlizXu/Nvx+Pj0ubf+SYnD09Wn0FnfB2RtSMl2xnpnrL2EtRHd2pbArLEBBfAArfAAt5eb6zrrLtAY9A2z58KBDFkTLDWd/bDhJ0yIpbi0XeY8M389dNYY1HmbCCcd++A77h7+CF/55UsZDP+KfQgeZse6RL31xhJbePaJRhYNNf5KS2/MM8zFxTh4KPYLeTCcsvCGsFtHXedoMMHZl9E0NvnLOZ67/NL3zynFeIUBSpcv1r4OZ4ASnXVn59ch7aEe24N7b9LP+e5P0Vsg0IGDs97766t79B9j+8+atLJb/gAAAABJRU5ErkJggg==">
+    <link rel="apple-touch-icon" href="https://espatv.github.io/img/espakodilogo.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://espakodi.github.io/espatv/">
+    <meta property="og:site_name" content="EspaKodi">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="EspaTV · Instrucciones de instalación para Kodi">
+    <meta property="og:description"
+        content="Instrucciones paso a paso para instalar EspaTV en Kodi desde repositorio o zip directo, y catálogo de addons de EspaKodi.">
+    <meta property="og:image" content="https://espatv.github.io/img/espatv.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function () {
+            var r = document.documentElement;
+            var t = localStorage.getItem('espatv-theme');
+            var p = localStorage.getItem('espatv-palette');
+            var knownP = ['teal', 'indigo', 'burgundy', 'forest', 'terracotta', 'noche'];
+            if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
+            if (knownP.includes(p)) r.setAttribute('data-palette', p);
+        })();
+    </script>
     <style>
+
+        :root {
+            --bg: #f5f4f1;
+            --surface: #ffffff;
+            --surface-2: #ecebe6;
+            --code-bg: #edece7;
+            --text: #22251f;
+            --text-soft: #565a52;
+            --text-mute: #8c8e85;
+            --border: #e3e1d9;
+            --warn: #c2410c;
+            --warn-soft: #faf5ee;
+            --warn-border: #f2dec4;
+            --shadow: 0 1px 3px rgba(28, 30, 26, .07);
+            --shadow-md: 0 6px 18px rgba(28, 30, 26, .10);
+            --shadow-lg: 0 12px 32px rgba(28, 30, 26, .18);
+            --espa-grad: linear-gradient(to right, #d97070 0%, #ffe082 100%);
+        }
+
+        [data-theme="dark"] {
+            --bg: #191b18;
+            --surface: #212420;
+            --surface-2: #2b2e29;
+            --code-bg: #282b26;
+            --text: #e9e8e2;
+            --text-soft: #abaca3;
+            --text-mute: #7f817a;
+            --border: #33352f;
+            --warn: #f59e0b;
+            --warn-soft: rgba(245, 158, 11, 0.08);
+            --warn-border: rgba(245, 158, 11, 0.22);
+            --shadow: 0 1px 3px rgba(0, 0, 0, .3);
+            --shadow-md: 0 6px 18px rgba(0, 0, 0, .35);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, .55);
+            --espa-grad: linear-gradient(to right, #ffb3b3 0%, #ffe699 100%);
+        }
+
+        [data-palette="teal"] {
+            --primary: #136b5e;
+            --primary-strong: #0e564c;
+            --primary-soft: #e4efec;
+            --hero: #114a43;
+            --hero-accent: #9ae9d9;
+            --tool: #356b3f;
+            --tool-soft: #e6efe5;
+        }
+
+        [data-palette="indigo"] {
+            --primary: #37548f;
+            --primary-strong: #2b4373;
+            --primary-soft: #e7eaf3;
+            --hero: #283c6e;
+            --hero-accent: #b4c9ff;
+            --tool: #136b5e;
+            --tool-soft: #e4efec;
+        }
+
+        [data-palette="burgundy"] {
+            --primary: #8a3144;
+            --primary-strong: #6f2737;
+            --primary-soft: #f3e6e9;
+            --hero: #5e2330;
+            --hero-accent: #ffb8c5;
+            --tool: #6b4a00;
+            --tool-soft: #f5eedb;
+        }
+
+        [data-palette="forest"] {
+            --primary: #356b3f;
+            --primary-strong: #2a5532;
+            --primary-soft: #e6efe5;
+            --hero: #274a2c;
+            --hero-accent: #a3e9ae;
+            --tool: #136b5e;
+            --tool-soft: #e4efec;
+        }
+
+        [data-palette="terracotta"] {
+            --primary: #a85534;
+            --primary-strong: #8a4429;
+            --primary-soft: #f5e9e2;
+            --hero: #7a3d24;
+            --hero-accent: #ffc4ab;
+            --tool: #356b3f;
+            --tool-soft: #e6efe5;
+        }
+
+        [data-palette="noche"] {
+            --primary: #0288d1;
+            --primary-strong: #0277bd;
+            --primary-soft: #e1f5fe;
+            --hero: #01579b;
+            --hero-accent: #81d4fa;
+            --tool: #00796b;
+            --tool-soft: #e0f2f1;
+        }
+
+        [data-theme="dark"][data-palette="teal"] {
+            --primary: #58b4a4;
+            --primary-strong: #74c4b6;
+            --primary-soft: #17302c;
+            --tool: #6fb277;
+            --tool-soft: #1b2c1d;
+        }
+
+        [data-theme="dark"][data-palette="indigo"] {
+            --primary: #90a1d6;
+            --primary-strong: #aab6df;
+            --primary-soft: #1f2438;
+            --tool: #58b4a4;
+            --tool-soft: #17302c;
+        }
+
+        [data-theme="dark"][data-palette="burgundy"] {
+            --primary: #cf7b8b;
+            --primary-strong: #dc97a4;
+            --primary-soft: #321c21;
+            --tool: #d68f6b;
+            --tool-soft: #2e2018;
+        }
+
+        [data-theme="dark"][data-palette="forest"] {
+            --primary: #6fb277;
+            --primary-strong: #8bc391;
+            --primary-soft: #1b2c1d;
+            --tool: #58b4a4;
+            --tool-soft: #17302c;
+        }
+
+        [data-theme="dark"][data-palette="terracotta"] {
+            --primary: #d68f6b;
+            --primary-strong: #e0a484;
+            --primary-soft: #2e2018;
+            --tool: #6fb277;
+            --tool-soft: #1b2c1d;
+        }
+
+        [data-theme="dark"][data-palette="noche"] {
+
+            --bg: #1c1b1f;
+            --surface: #2b2930;
+            --surface-2: #36343b;
+            --code-bg: #2b2930;
+            --text: #e6e1e5;
+            --text-soft: #cac4d0;
+            --text-mute: #938f99;
+            --border: #49454f;
+            --warn: #ffb77a;
+            --warn-soft: rgba(255, 183, 122, .07);
+            --warn-border: rgba(255, 183, 122, .22);
+            --shadow: 0 1px 3px rgba(0, 0, 0, .4);
+            --shadow-md: 0 6px 18px rgba(0, 0, 0, .5);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, .7);
+
+            --primary: #4fc3f7;
+            --primary-strong: #81d4fa;
+            --primary-soft: rgba(79, 195, 247, .14);
+            --hero: #13111a;
+            --hero-accent: #bce9ff;
+            --tool: #6dd58c;
+            --tool-soft: rgba(109, 213, 140, .12);
+        }
+
+        html.a11y-contrast {
+            --text: #000;
+            --text-soft: #000;
+            --text-mute: #333;
+            --bg: #fff;
+            --surface: #fff;
+            --border: #000;
+        }
+
+        html.a11y-contrast[data-theme="dark"] {
+            --text: #fff;
+            --text-soft: #fff;
+            --text-mute: #ccc;
+            --bg: #000;
+            --surface: #000;
+            --border: #fff;
+        }
+
+        html.a11y-bold body {
+            font-weight: 600;
+        }
+
+        html.a11y-large {
+            font-size: 19px;
+        }
+
+        html.a11y-large body {
+            font-size: 19px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
         body {
-            font-family: sans-serif;
-            max-width: 750px;
-            margin: 2em auto;
-            padding: 0 1em;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 17px;
             line-height: 1.7;
-            color: #222;
-            background: #fafafa
+            -webkit-font-smoothing: antialiased;
+            transition: background .2s, color .2s;
         }
 
-        h1 {
-            margin-bottom: .2em
+        ::selection {
+            background: var(--primary-soft);
+            color: var(--primary-strong);
         }
 
-        h2 {
-            margin-top: 2em;
-            border-bottom: none;
-            padding-bottom: .3em
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 90;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 0 16px;
+            height: 52px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        h3 {
-            margin-top: 1.5em;
-            color: #444
+        .topbar-brand {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            flex-shrink: 0;
+            text-decoration: none;
         }
 
-        code {
-            background: #eee;
-            padding: .15em .4em;
-            border-radius: 3px;
-            font-size: .95em
+        .topbar-brand strong {
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
         }
 
-        .warn {
-            background: #fff8e1;
-            border-left: 3px solid #f9a825;
-            padding: .8em 1em;
-            margin: 1em 0;
-            font-size: .93em
+        .topbar-brand em {
+            font-style: normal;
+            color: var(--primary);
+            display: inline;
         }
 
-        hr {
+        .kodi-k-inline {
+            display: inline-block;
+            height: 1.12em;
+            width: auto;
+            vertical-align: -0.26em;
+            margin-left: 0;
+            margin-right: -0.22em;
+        }
+
+        .topbar-brand .kodi-k-inline {
+            display: inline-block;
+            height: 1.12em;
+            width: auto;
+            vertical-align: -0.26em;
+            margin-left: 0;
+            margin-right: -0.22em;
+        }
+
+        .espa-text {
+            background: var(--espa-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .hero h1 .espa-text {
+            background: linear-gradient(to right, #ffb3b3 0%, #ffe699 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tb-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 36px;
+            padding: 0 11px;
+            border: 1px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text-soft);
+            border-radius: 8px;
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.82rem;
+            font-weight: 500;
+            white-space: nowrap;
+            text-decoration: none;
+            transition: color .15s, border-color .15s, background .15s;
+        }
+
+        .tb-btn:hover {
+            color: var(--text);
+            border-color: var(--primary);
+        }
+
+        .tb-btn svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        #a11yBtn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .tb-swatch {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--primary);
+            flex-shrink: 0;
+            pointer-events: none;
+        }
+
+        .hero-pill-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            transition: background 0.2s, border-color 0.2s, transform 0.18s, box-shadow 0.2s;
+        }
+
+        .hero-pill-btn:hover {
+            background: rgba(255, 255, 255, 0.22);
+            border-color: rgba(255, 255, 255, 0.65);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+            color: #ffffff !important;
+        }
+
+        .share-wrap,
+        .a11y-wrap {
+            position: relative;
+        }
+
+        .share-panel {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            width: min(280px, calc(100vw - 2rem));
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            padding: 14px;
+            display: none;
+            z-index: 200;
+        }
+
+        .share-panel.show {
+            display: block;
+        }
+
+        .share-preview {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 10px 12px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .share-logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 9px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .share-info {
+            min-width: 0;
+        }
+
+        .share-info strong {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .share-info span {
+            display: block;
+            font-size: 0.78rem;
+            color: var(--text-mute);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .share-url-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .share-url-row span {
+            flex: 1;
+            font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+            font-size: 0.75rem;
+            color: var(--primary);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .share-copy {
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text-mute);
+            cursor: pointer;
+            transition: color .15s, border-color .15s, background .15s;
+        }
+
+        .share-copy:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .share-copy.done {
+            color: #fff;
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .share-copy svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        .share-btns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7px;
+        }
+
+        .share-svc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 9px 6px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text-soft);
+            text-decoration: none;
+            font: inherit;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color .15s, border-color .15s, background .15s;
+        }
+
+        .share-svc:hover {
+            color: var(--text);
+            border-color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .share-svc svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .a11y-wrap {
+            position: relative;
+        }
+
+        .a11y-panel {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            width: min(240px, calc(100vw - 2rem));
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: var(--shadow-lg);
+            padding: 4px;
+            display: none;
+            z-index: 200;
+        }
+
+        .a11y-panel.show {
+            display: block;
+        }
+
+        .a11y-panel-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-mute);
+            padding: 6px 10px 4px;
+        }
+
+        .a11y-opt {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 8px 10px;
             border: none;
-            border-top: 1px solid #ddd;
-            margin: 2em 0
+            background: transparent;
+            cursor: pointer;
+            color: var(--text-soft);
+            font: inherit;
+            font-size: 0.87rem;
+            border-radius: 6px;
+            text-align: left;
+            transition: background .12s, color .12s;
         }
 
-        li {
-            margin-bottom: .6em
+        .a11y-opt:hover {
+            background: var(--surface-2);
+            color: var(--text);
         }
 
-        a {
-            color: #1a73e8
+        .a11y-opt span:first-child {
+            flex: 1;
         }
+
+        .a11y-sw {
+            width: 34px;
+            height: 20px;
+            border-radius: 999px;
+            background: var(--border);
+            position: relative;
+            flex-shrink: 0;
+            transition: background .15s;
+        }
+
+        .a11y-sw::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff;
+            transition: transform .15s;
+        }
+
+        .a11y-opt[aria-pressed="true"] .a11y-sw {
+            background: var(--primary);
+        }
+
+        .a11y-opt[aria-pressed="true"] .a11y-sw::after {
+            transform: translateX(14px);
+        }
+
+        .hero {
+            background: var(--hero);
+            color: #f3f3ee;
+            text-align: center;
+            padding: clamp(3.4rem, 8vw, 5.6rem) clamp(1.5rem, 5vw, 4rem);
+        }
+
+        .hero-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .hero-mark {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 24px;
+            border-radius: 20px;
+            background: transparent;
+            border: none;
+            padding: 0;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: heroLogoFloat 4.2s ease-in-out infinite;
+        }
+
+        /* Ondas expansivas radar que emanan de todo el contorno del logo */
+        .hero-mark::before,
+        .hero-mark-wave {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 20px;
+            border: 2px solid var(--hero-accent, #9ae9d9);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-mark::before {
+            animation: heroLogoRadarWave 3s cubic-bezier(0.18, 0.8, 0.25, 1) infinite;
+        }
+
+        .hero-mark-wave {
+            animation: heroLogoRadarWave 3s cubic-bezier(0.18, 0.8, 0.25, 1) infinite;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes heroLogoRadarWave {
+            0% {
+                transform: scale(0.96);
+                opacity: 0.85;
+            }
+            50% {
+                transform: scale(1.42);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1.42);
+                opacity: 0;
+            }
+        }
+
+        .hero-mark-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border: 1.5px solid rgba(255, 255, 255, 0.22);
+            transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+            z-index: 1;
+        }
+
+        .hero-mark-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.28s ease, filter 0.28s ease;
+        }
+
+        /* Destello diagonal de luz (sheen de brillo) que recorre todo el logo suavemente */
+        .hero-mark-inner::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -120%;
+            width: 70%;
+            height: 200%;
+            background: linear-gradient(
+                75deg,
+                transparent 15%,
+                rgba(255, 255, 255, 0.4) 50%,
+                transparent 85%
+            );
+            transform: rotate(25deg);
+            animation: heroSweepDestello 4s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+            pointer-events: none;
+        }
+
+        @keyframes heroSweepDestello {
+            0%, 25% {
+                left: -120%;
+            }
+            60%, 100% {
+                left: 170%;
+            }
+        }
+
+        /* Respiración suave en reposo */
+        @keyframes heroLogoFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        /* Hover: elevación, destello más vivo en todo el logo y pausa de flotación */
+        .hero-mark:hover {
+            transform: translateY(-4px) scale(1.08);
+            animation-play-state: paused;
+        }
+
+        .hero-mark:hover::before {
+            opacity: 0.85;
+            transform: scale(1.2);
+            filter: blur(10px);
+            background: radial-gradient(circle at center, var(--hero-accent, #9ae9d9) 20%, transparent 75%);
+        }
+
+        .hero-mark:hover .hero-mark-inner {
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5), 0 0 24px var(--hero-accent, #9ae9d9);
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .hero-mark:hover .hero-mark-img {
+            filter: brightness(1.08);
+        }
+
+        /* Píldora discreta al pasar el cursor */
+        .hero-video-hint {
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%) translateY(4px);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #ffffff;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            padding: 3px 10px;
+            border-radius: 999px;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+            z-index: 3;
+        }
+
+        .hero-mark:hover .hero-video-hint {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+            font-weight: 600;
+            line-height: 1.14;
+            letter-spacing: -0.018em;
+            color: #fff;
+            margin-top: -4px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--hero-accent);
+        }
+
+        .hero-sub {
+            margin: 1.1rem auto 0;
+            max-width: 54ch;
+            font-size: clamp(1rem, 2.4vw, 1.15rem);
+            font-weight: 300;
+            color: rgba(255, 255, 255, .8);
+            text-wrap: balance;
+            line-height: 1.5;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 1.8rem;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .15);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, .88);
+        }
+
+        .pill .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--hero-accent);
+        }
+
+        .hero-cta-split {
+            display: inline-flex;
+            align-items: stretch;
+            margin-top: 1.8rem;
+            background: rgba(154, 233, 217, 0.10);
+            border: 1.5px solid rgba(154, 233, 217, 0.38);
+            border-radius: 50px;
+            overflow: hidden;
+            transition: border-color 0.2s, transform 0.18s;
+        }
+
+        .hero-cta-split:hover {
+            border-color: rgba(154, 233, 217, 0.65);
+            transform: translateY(-2px);
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 18px;
+            color: #9ae9d9;
+            font-size: 0.88rem;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: background 0.2s;
+        }
+
+        .hero-cta:hover {
+            background: rgba(154, 233, 217, 0.08);
+        }
+
+        .hero-info-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 13px;
+            flex-shrink: 0;
+            border: none;
+            border-left: 1px solid rgba(154, 233, 217, 0.3);
+            background: transparent;
+            color: #9ae9d9;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .hero-info-btn:hover,
+        .hero-info-btn:active {
+            background: rgba(154, 233, 217, 0.15);
+        }
+
+        .hero-info-btn svg {
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        .src-dialog {
+            max-width: 360px;
+        }
+
+        .src-url-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 16px 20px 0;
+        }
+
+        .src-url-row code {
+            flex: 1;
+            font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+            font-size: 0.82rem;
+            color: var(--primary);
+            word-break: break-all;
+        }
+
+        .src-steps {
+            margin: 14px 20px 16px;
+            padding-left: 1.4em;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: var(--text-soft);
+            line-height: 1.45;
+        }
+
+        .src-steps li::marker {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .src-full-link {
+            display: block;
+            text-align: center;
+            padding: 12px 20px 18px;
+            font-size: 0.85rem;
+            color: var(--primary);
+            text-decoration: none;
+            border-top: 1px solid var(--border);
+        }
+
+        .src-full-link:hover {
+            text-decoration: underline;
+        }
+
+        .hero-hint {
+            margin-top: 0;
+            font-size: 0.8rem;
+            line-height: 0;
+            color: rgba(255, 255, 255, 0.45);
+            opacity: 0;
+            overflow: hidden;
+            transition: opacity 0.25s ease, margin-top 0.25s ease, line-height 0.25s ease;
+        }
+
+        .hero-cta-split:hover ~ .hero-hint {
+            opacity: 1;
+            margin-top: 0.55rem;
+            line-height: 1.5;
+        }
+
+        .hero-hint.show {
+            opacity: 1;
+            margin-top: 0.55rem;
+            line-height: 1.5;
+        }
+
+        @media (hover: none) {
+            .cta-extra {
+                display: none;
+            }
+        }
+
+        .wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: clamp(2rem, 4vw, 3rem) 20px clamp(1rem, 2vw, 1.6rem);
+        }
+
+        .grid {
+            columns: 3 340px;
+            column-gap: 18px;
+        }
+
+        .card {
+            break-inside: avoid;
+            margin-bottom: 18px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .45s ease, transform .45s ease, box-shadow .22s, border-color .22s;
+        }
+
+        .card.in {
+            opacity: 1;
+            transform: none;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+
+        .card-top {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 20px 20px 16px;
+        }
+
+        .addon-icon {
+            width: 68px;
+            height: 68px;
+            border-radius: 14px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+        }
+
+        .addon-icon-fallback {
+            width: 68px;
+            height: 68px;
+            border-radius: 14px;
+            flex-shrink: 0;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .title-col {
+            flex: 1;
+            min-width: 0;
+            padding-top: 2px;
+        }
+
+        .name-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .card-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        .chip {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            padding: 2px 9px;
+            border-radius: 999px;
+        }
+
+        .chip.v {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .chip.t {
+            color: var(--tool);
+            background: var(--tool-soft);
+        }
+
+        .chip.g {
+            color: #b26a00;
+            background: rgba(230, 138, 0, 0.12);
+        }
+
+        .chip.s {
+            color: #7b4397;
+            background: rgba(123, 67, 151, 0.12);
+        }
+
+        [data-theme="dark"] .chip.g {
+            color: #ffb84d;
+            background: rgba(255, 184, 77, 0.16);
+        }
+
+        [data-theme="dark"] .chip.s {
+            color: #d18ff0;
+            background: rgba(209, 143, 240, 0.16);
+        }
+
+        .card-sub {
+            margin-top: 3px;
+            font-size: 0.86rem;
+            color: var(--text-mute);
+            line-height: 1.4;
+        }
+
+        .div {
+            height: 1px;
+            background: var(--border);
+            margin: 0 20px;
+        }
+
+        .card-body {
+            padding: 16px 20px;
+            font-size: 0.94rem;
+            color: var(--text-soft);
+            line-height: 1.62;
+            flex: 1;
+        }
+
+        .feat-lbl {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-mute);
+            margin: 14px 0 8px;
+        }
+
+        .feat {
+            list-style: none;
+            display: grid;
+            gap: 9px;
+        }
+
+        .feat li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            font-size: 0.9rem;
+            color: var(--text-soft);
+            line-height: 1.5;
+        }
+
+        .feat li svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            margin-top: 3px;
+            color: var(--primary);
+        }
+
+        .feat li b {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .feat-more {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .source {
+            margin: 0 20px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 13px;
+            border-radius: 8px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+        }
+
+        .src-lbl {
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            color: var(--text-mute);
+            flex-shrink: 0;
+        }
+
+        .src-url {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.78rem;
+            color: var(--primary);
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .copy-btn {
+            width: 32px;
+            height: 32px;
+            padding: 0 !important;
+            margin: 0;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text-mute);
+            cursor: pointer;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            line-height: 1;
+            transition: color .15s, border-color .15s, background .15s;
+        }
+
+        .copy-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .copy-btn.done {
+            color: #fff;
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .copy-btn svg {
+            width: 15px;
+            height: 15px;
+            display: block;
+            margin: auto;
+            flex-shrink: 0;
+            pointer-events: none;
+        }
+
+        .card-foot {
+            padding: 0 20px 20px;
+        }
+
+        .btn-install {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: none;
+            background: var(--primary);
+            color: #fff;
+            font: inherit;
+            font-size: 0.92rem;
+            font-weight: 600;
+            cursor: pointer;
+            gap: 8px;
+            transition: background .18s;
+        }
+
+        .btn-install:hover {
+            background: var(--primary-strong);
+        }
+
+        a.btn-install {
+            text-decoration: none;
+        }
+
+        .apk-icon-link {
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .btn-install .lft {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .btn-install .lft svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .btn-install .arr {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            transition: transform .18s;
+        }
+
+        .btn-install:hover .arr {
+            transform: translateX(3px);
+        }
+
+        [data-theme="dark"] .btn-install {
+            background: var(--hero);
+            color: var(--hero-accent);
+        }
+
+        [data-theme="dark"] .btn-install:hover {
+            background: var(--hero-accent);
+            color: var(--hero);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(15, 17, 14, .55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .22s;
+        }
+
+        .modal-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .dialog {
+            width: 100%;
+            max-width: 540px;
+            max-height: 88vh;
+            background: var(--surface);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: scale(.96) translateY(14px);
+            transition: transform .28s cubic-bezier(.2, .8, .2, 1);
+        }
+
+        .modal-overlay.open .dialog {
+            transform: none;
+        }
+
+        .modal-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 20px 20px 16px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .modal-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 11px;
+            object-fit: cover;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .modal-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .modal-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .modal-sub {
+            font-size: 0.84rem;
+            color: var(--text-mute);
+            margin-top: 1px;
+        }
+
+        .modal-x {
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            border: none;
+            background: transparent;
+            color: var(--text-mute);
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: background .15s, color .15s;
+        }
+
+        .modal-x:hover {
+            background: var(--surface-2);
+            color: var(--text);
+        }
+
+        .modal-x svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .modal-body {
+            overflow-y: auto;
+            padding: 22px 20px;
+        }
+
+        .modal-body::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .modal-body::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        .step-lbl {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-mute);
+            margin-bottom: 4px;
+        }
+
+        .steps {
+            list-style: none;
+            display: grid;
+            gap: 0;
+        }
+
+        .steps li {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 13px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+            color: var(--text-soft);
+            line-height: 1.55;
+        }
+
+        .steps li:last-child {
+            border-bottom: none;
+        }
+
+        .snum {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: var(--primary-soft);
+            border: 1.5px solid var(--primary);
+            color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .stxt {
+            flex: 1;
+            min-width: 0;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .stxt strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .stxt code {
+            font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+            font-size: 0.84em;
+            background: var(--code-bg);
+            color: var(--primary);
+            padding: 2px 6px;
+            border-radius: 5px;
+            word-break: break-all;
+            overflow-wrap: anywhere;
+            white-space: normal;
+            display: inline-block;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .note {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background: var(--warn-soft);
+            border: 1px solid var(--warn-border);
+            border-left: 3px solid var(--warn);
+            font-size: 0.88rem;
+            color: var(--text);
+            line-height: 1.5;
+            box-sizing: border-box;
+            width: 100%;
+            min-width: 0;
+        }
+
+        .note span {
+            flex: 1;
+            min-width: 0;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .note svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            color: var(--warn);
+        }
+
+        .note code {
+            font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+            font-size: 0.82em;
+            background: rgba(169, 110, 26, .14);
+            padding: 1px 5px;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 24px 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.88rem;
+            color: var(--text-mute);
+            line-height: 1.6;
+        }
+
+        footer strong {
+            color: var(--text-soft);
+            font-weight: 600;
+        }
+
+        .footer-dot {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: currentColor;
+            opacity: 0.6;
+            margin: 0 12px;
+            vertical-align: 2px;
+        }
+
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .burger-btn,
+        .mob-share-btn {
+            display: none;
+            width: 38px;
+            height: 38px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text);
+            cursor: pointer;
+            padding: 0;
+            flex-shrink: 0;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        .burger-btn:hover,
+        .mob-share-btn:hover {
+            background: var(--surface);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .burger-btn svg,
+        .mob-share-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .burger-btn .ic-close {
+            display: none;
+        }
+
+        .burger-btn[aria-expanded="true"] .ic-burger {
+            display: none;
+        }
+
+        .burger-btn[aria-expanded="true"] .ic-close {
+            display: block;
+        }
+
+        .topbar-mob-group {
+            display: none;
+        }
+
+        @media (max-width: 639px) {
+            .topbar-actions {
+                display: none;
+                position: fixed;
+                top: 52px;
+                left: 0;
+                right: 0;
+                background: var(--surface);
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                align-items: stretch;
+                padding: 12px 16px 16px;
+                gap: 8px;
+                box-shadow: var(--shadow-lg);
+                z-index: 89;
+                max-height: calc(100vh - 52px);
+                overflow-y: auto;
+            }
+
+            .topbar-actions.mobile-open {
+                display: flex;
+            }
+
+            .topbar-mob-group {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .burger-btn,
+            .mob-share-btn {
+                display: flex;
+            }
+
+            .topbar-actions .tb-btn {
+                width: 100%;
+                justify-content: flex-start;
+                padding: 0 14px;
+                height: 42px;
+            }
+
+            .topbar-actions .a11y-wrap,
+            .topbar-actions .share-wrap {
+                width: 100%;
+            }
+
+            .topbar-actions .a11y-panel,
+            .topbar-actions .share-panel {
+                position: static;
+                width: 100%;
+                box-shadow: none;
+                border-radius: 8px;
+                margin-top: 2px;
+            }
+
+            .grid {
+                columns: 1 100%;
+                column-gap: 0;
+            }
+
+            .modal-overlay {
+                padding: 10px;
+            }
+
+            .dialog {
+                width: 100%;
+                max-width: 100%;
+                max-height: 92vh;
+                border-radius: 12px;
+            }
+
+            .modal-body {
+                padding: 16px 12px;
+            }
+
+            .steps li {
+                font-size: 0.88rem;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            .btn-go-top {
+                bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+                right: calc(14px + env(safe-area-inset-right, 0px));
+                width: 40px;
+                height: 40px;
+            }
+
+            .direct-download-card {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                padding: 14px 14px;
+            }
+
+            .btn-direct-download {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+
+            .botones {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .boton {
+                width: 100%;
+                min-width: 0;
+                box-sizing: border-box;
+            }
+
+            footer {
+                padding: 18px 20px calc(76px + env(safe-area-inset-bottom, 0px));
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                padding-top: 1.5rem;
+                padding-bottom: 1.8rem;
+            }
+
+            .wrap {
+                padding-left: 14px;
+                padding-right: 14px;
+                padding-top: 1.5rem;
+                padding-bottom: 0.8rem;
+            }
+
+            .card-top {
+                padding: 16px 16px 12px;
+            }
+
+            .card-body {
+                padding: 12px 16px;
+            }
+
+            .source {
+                margin: 0 16px 14px;
+            }
+
+            .card-foot {
+                padding: 0 16px 16px;
+            }
+
+            .div {
+                margin: 0 16px;
+            }
+
+            .modal-overlay {
+                padding: 12px;
+            }
+
+            .dialog {
+                border-radius: 12px;
+            }
+        }
+
+        .icon-btn-video {
+            border: none;
+            padding: 0;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            border-radius: 14px;
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .icon-btn-video .addon-icon {
+            display: block;
+        }
+
+        .play-badge {
+            position: absolute;
+            inset: 0;
+            border-radius: 14px;
+            background: rgba(0, 0, 0, .45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity .18s;
+        }
+
+        .card:hover .play-badge,
+        .icon-btn-video:focus-visible .play-badge {
+            opacity: 1;
+        }
+
+        .play-badge svg {
+            width: 26px;
+            height: 26px;
+            color: #fff;
+            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .6));
+        }
+
+        .video-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 110;
+            background: rgba(0, 0, 0, .82);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .22s;
+        }
+
+        .video-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .video-dialog {
+            width: 90%;
+            max-width: 460px;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            transform: scale(.96) translateY(14px);
+            transition: transform .28s cubic-bezier(.2, .8, .2, 1);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, .8);
+        }
+
+        .video-overlay.open .video-dialog {
+            transform: none;
+        }
+
+        .video-dialog video {
+            width: 100%;
+            display: block;
+            max-height: 50vh;
+        }
+
+        .video-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 36px;
+            height: 36px;
+            background: rgba(0, 0, 0, .55);
+            border: none;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: background .15s;
+            z-index: 1;
+        }
+
+        .video-close:hover {
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .video-close svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Botón flotante Go To Top */
+        .btn-go-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--primary);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(14px);
+            transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.2s;
+        }
+
+        .btn-go-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .btn-go-top:hover {
+            background: var(--primary);
+            color: #ffffff !important;
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+
+        .btn-go-top svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-go-top:hover svg {
+            transform: translateY(-2px);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .card {
+                opacity: 1;
+                transform: none;
+                transition: box-shadow .2s, border-color .2s;
+            }
+
+            .modal-overlay,
+            .video-overlay,
+            .dialog,
+            .video-dialog,
+            .btn-install .arr {
+                transition: none;
+            }
+        }
+    
+        /* Estilos específicos para la sección de instrucciones de EspaTV */
+        .instruction-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow-md);
+            padding: clamp(20px, 4vw, 32px);
+            margin-bottom: 28px;
+        }
+
+        .inst-card-head {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 18px;
+            margin-bottom: 22px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .inst-card-badge {
+            width: 48px;
+            height: 48px;
+            border-radius: 13px;
+            background: var(--primary-soft);
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+
+        .inst-card-badge.zip {
+            background: var(--tool-soft);
+            color: var(--tool);
+        }
+
+        .inst-card-badge svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .inst-card-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .inst-card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.25;
+            margin: 0;
+        }
+
+        .inst-card-sub {
+            font-size: 0.88rem;
+            color: var(--text);
+            margin-top: 4px;
+        }
+
+        .hash-box {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin: 14px 0 18px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.86rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        .hash-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hash-code {
+            color: var(--primary);
+            word-break: break-all;
+        }
+
+        .inst-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .inst-header-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 14px;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            background: var(--surface-2);
+        }
+
+        .inst-header-text h2 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .inst-header-text p {
+            font-size: 0.92rem;
+            color: var(--text-soft);
+            margin-top: 4px;
+        }
+
+        .inst-section-title {
+            font-size: 1.18rem;
+            font-weight: 600;
+            color: var(--text);
+            margin: 28px 0 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .inst-section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .inst-steps {
+            margin: 0;
+            padding-left: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            color: var(--text-soft);
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+
+        .inst-steps li {
+            margin-bottom: 4px;
+        }
+
+        .inst-steps li::marker {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .code-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.92rem;
+            color: var(--primary);
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .note-box {
+            background: var(--surface-2);
+            border-left: 4px solid var(--primary);
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 16px;
+            border-radius: 0 10px 10px 0;
+            margin: 14px 0 18px;
+            font-size: 0.92rem;
+            color: var(--text);
+            line-height: 1.55;
+        }
+
+        .note-box strong {
+            color: var(--primary);
+        }
+
+        .direct-download-card {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 14px 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .direct-download-card .file-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .direct-download-card .file-info svg {
+            width: 32px;
+            height: 32px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .btn-direct-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface-2);
+            color: var(--primary) !important;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            transition: background 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-direct-download:hover {
+            background: var(--surface);
+            border-color: var(--primary);
+            color: var(--primary) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        [data-theme="dark"] .btn-direct-download {
+            background: var(--surface-2);
+            color: var(--primary) !important;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        [data-theme="dark"] .btn-direct-download:hover {
+            background: var(--code-bg);
+            border-color: var(--primary);
+            color: var(--primary) !important;
+        }
+
+        /* Botones Web y Telegram idénticos en propósito a ekskin con aspecto continuista */
+        .botones {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            margin: 26px 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .boton {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.96rem;
+            min-width: 150px;
+            padding: 11px 24px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text) !important;
+            box-shadow: var(--shadow);
+            transition: all 0.2s ease;
+        }
+
+        .boton:hover {
+            border-color: var(--primary);
+            color: var(--primary) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .boton.boton-primary {
+            background: var(--primary);
+            color: #fff !important;
+            border-color: var(--primary);
+        }
+
+        .boton.boton-primary:hover {
+            filter: brightness(1.08);
+            color: #fff !important;
+        }
+
+        .bar-info {
+            margin-top: 24px;
+            padding: 10px 14px;
+            font-size: 0.82rem;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-mute);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .repo-files-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0 16px;
+        }
+
+        .repo-file-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+            font-size: 0.82rem;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.15s;
+        }
+
+        .repo-file-chip:hover {
+            border-color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .section-separator {
+            margin: 48px 0 28px;
+            text-align: center;
+        }
+
+        .section-separator h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .section-separator p {
+            color: var(--text-mute);
+            font-size: 0.95rem;
+        }
+    
     </style>
 </head>
 
 <body>
+    <!-- Topbar idéntica a espatv.github.io -->
+    <nav class="topbar" aria-label="Navegación principal">
+        <a href="https://espatv.github.io/" class="topbar-brand" style="text-decoration: none;">
+            <strong><span class="espa-text">Espa</span><em><svg class="kodi-k-inline" viewBox="0 0 24 24" fill="none">
+                        <defs>
+                            <linearGradient id="kodi-grad-inline" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#2fd5f6" />
+                                <stop offset="40%" stop-color="#17b2e7" />
+                                <stop offset="100%" stop-color="#0d7fa9" />
+                            </linearGradient>
+                            <mask id="k-mask-inline">
+                                <rect x="3.6" y="3.6" width="16.8" height="16.8" rx="2.5" ry="2.5"
+                                    transform="rotate(45 12 12)" fill="white" />
+                                <path
+                                    d="M12.03.047c-.226 0-.452.107-.669.324-.922.922-1.842 1.845-2.763 2.768-.233.233-.455.48-.703.695-.31.267-.405.583-.399.988.02 1.399.008 2.799.008 4.198 0 1.453-.002 2.907 0 4.36 0 .11.002.223.03.327.087.337.303.393.546.15 1.31-1.31 2.618-2.622 3.928-3.933l4.449-4.453c.43-.431.43-.905 0-1.336L12.697.37c-.216-.217-.442-.324-.668-.324zm7.224 7.23c-.223 0-.445.104-.65.309L14.82 11.37c-.428.429-.427.895 0 1.322l3.76 3.766c.44.44.908.44 1.346.002 1.215-1.216 2.427-2.433 3.644-3.647.182-.18.353-.364.43-.615v-.33c-.077-.251-.246-.436-.428-.617-1.224-1.22-2.443-2.445-3.666-3.668-.205-.205-.429-.307-.652-.307zM4.18 7.611c-.086.014-.145.094-.207.157L.209 11.572c-.28.284-.278.677.004.96l2.043 2.046c.59.59 1.177 1.182 1.767 1.772.169.168.33.139.416-.084.044-.114.062-.242.063-.364.004-1.283.004-2.567.004-3.851h-.002V8.184c0-.085-.01-.169-.022-.252-.019-.135-.072-.258-.207-.309a.186.186 0 0 0-.095-.012zm7.908 6.838c-.224 0-.447.106-.656.315L7.66 18.537c-.433.434-.433.899.002 1.334 1.215 1.216 2.43 2.43 3.643 3.649.18.18.361.354.611.433h.33c.244-.069.423-.226.598-.402 1.222-1.23 2.45-2.453 3.676-3.68.43-.43.427-.905-.004-1.338l-3.772-3.773c-.208-.208-.432-.311-.656-.31z"
+                                    fill="black" />
+                            </mask>
+                        </defs>
+                        <rect x="0" y="0" width="24" height="24" fill="url(#kodi-grad-inline)"
+                            mask="url(#k-mask-inline)" />
+                    </svg>odi</em></strong>
+        </a>
 
-    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; margin-bottom: 0.5em; color: #000;">Index of /espatv/</h1>
+        <!-- Acciones de la barra superior (en móvil se repliegan en el menú desplegable) -->
+        <div class="topbar-actions" id="topbarActions">
+            <!-- Botones de acción rápida: Web y Telegram -->
+            <a class="tb-btn" href="https://espatv.github.io/" title="Ir a la web principal de EspaKodi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>Web</span>
+            </a>
 
-    <p style="font-family: monospace; font-size: 1.1em; line-height: 1.3; margin: 10px 0;">
-        <a href="repository.espatv-1.0.0.zip" style="color: blue; text-decoration: underline;">repository.espatv-1.0.0.zip</a><br>
-        <a href="addons.xml" style="color: blue; text-decoration: underline;">addons.xml</a><br>
-        <a href="addons.xml.md5" style="color: blue; text-decoration: underline;">addons.xml.md5</a><br>
-    </p>
+        <a class="tb-btn" href="https://t.me/espadaily" target="_blank" rel="noopener noreferrer" title="Canal de Telegram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21.5 2L2 9.5l7 3 2 7 3.5-4.5L19 18l2.5-16z"/></svg>
+            <span>Telegram</span>
+        </a>
 
-    <h2>EspaTV</h2>
-    <p>Addon todo en uno de ESPAKODI para contenido en castellano: TDT, RTVE a la carta, YouTube, Dailymotion, radio, podcasts, top películas y series, filmoteca, prensa, música, documentales, audiolibros, noticias, meteorología, agenda deportiva, mercados, precio de la luz, gasolineras, tráfico (DGT) y mucho más.<br><br>
-        Contacto: <b><a href="https://t.me/rubensdfa1laberot/?direct">https://t.me/rubensdfa1laberot/?direct</a></b></p>
+        <button class="tb-btn" id="themeBtn" aria-label="Cambiar tema claro u oscuro">
+            <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <span id="themeLabel">Modo claro</span>
+        </button>
 
-    <h2>Cómo instalar</h2>
+        <button class="tb-btn" id="paletteBtn" aria-label="Cambiar paleta de color">
+            <span class="tb-swatch" id="paletteSwatch"></span>
+            <span id="paletteLabel">Teal</span>
+        </button>
 
-    <h3>Desde repositorio (recomendado — recibe actualizaciones automáticas)</h3>
-    <ol>
-        <li>En Kodi: <b>Ajustes</b> → <b>Explorador de archivos</b> → <b>Añadir fuente</b>.</li>
-        <li>En <code>&lt;Ninguno&gt;</code> introduce esta dirección exacta:<br><br>
-            <b><code>https://espakodi.github.io/espatv/</code></b>
-            <div class="warn">Importante: la dirección web debe terminar en <code>.io/espatv/</code>. La URL que termina en github.com no sirve.</div>
-        </li>
-        <li>Ponle de nombre <code>espatv</code> y pulsa OK.</li>
-        <li>Ve a <b>Add-ons</b> → icono de paquete (esquina superior izquierda) → <b>Instalar desde archivo zip</b>.<br>
-            <small>(Si aparece el aviso de seguridad: <b>Ajustes</b> → <b>Sistema</b> → <b>Add-ons</b> → activar "Orígenes desconocidos").</small>
-        </li>
-        <li>Selecciona la fuente <code>espatv</code> → <code>repository.espatv-1.0.0.zip</code>.</li>
-        <li>Cuando aparezca la notificación "Add-on instalado", ve a <b>Instalar desde repositorio</b> → <b>EspaTV Repository</b> →
-            <b>Add-ons de vídeo</b> → <b>EspaTV</b> → <b>Instalar</b>.
-        </li>
-    </ol>
+        <!-- Menú Accesibilidad -->
+        <div class="a11y-wrap">
+            <button class="tb-btn" id="a11yBtn" aria-expanded="false" aria-haspopup="true"
+                aria-label="Opciones de accesibilidad">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="4.5" r="2" fill="currentColor" stroke="none" />
+                    <path d="M4.5 8.5h15M12 8.5v7.5m-4.5 4.5 4.5-4.5 4.5 4.5" />
+                </svg>
+                <span>Accesibilidad</span>
+            </button>
+            <div class="a11y-panel" id="a11yPanel" role="menu">
+                <div class="a11y-panel-title">Accesibilidad</div>
+                <button type="button" class="a11y-opt" data-a11y="large" role="menuitemcheckbox" aria-checked="true"
+                    aria-pressed="true">
+                    <span>Texto grande</span><span class="a11y-sw"></span>
+                </button>
+                <button type="button" class="a11y-opt" data-a11y="bold" role="menuitemcheckbox" aria-checked="false"
+                    aria-pressed="false">
+                    <span>Texto en negrita</span><span class="a11y-sw"></span>
+                </button>
+                <button type="button" class="a11y-opt" data-a11y="contrast" role="menuitemcheckbox"
+                    aria-checked="false" aria-pressed="false">
+                    <span>Alto contraste</span><span class="a11y-sw"></span>
+                </button>
+            </div>
+        </div>
 
-    <h3>Desde ZIP (instalación manual sin actualizaciones automáticas)</h3>
-    <ol>
-        <li>Descarga el <code>.zip</code> desde <a href="https://github.com/espakodi/espatv/releases">https://github.com/espakodi/espatv/releases</a>.</li>
-        <li>En Kodi: <b>Add-ons</b> → icono de paquete → <b>Instalar desde archivo zip</b> → selecciona el archivo descargado.</li>
-    </ol>
+        <!-- Botón Compartir -->
+        <div class="share-wrap">
+            <button class="tb-btn" id="shareBtn" aria-label="Compartir" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                    <polyline points="16 6 12 2 8 6" />
+                    <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+                <span>Compartir</span>
+            </button>
+            <div class="share-panel" id="sharePanel">
+                <div class="share-preview">
+                    <img class="share-logo" src="https://espatv.github.io/img/espakodilogo.jpg" alt="EspaKodi">
+                    <div class="share-info">
+                        <strong>EspaTV · Instrucciones para Kodi</strong>
+                        <span>Instalación desde repositorio o archivo ZIP</span>
+                    </div>
+                </div>
+                <div class="share-url-row">
+                    <span id="shareUrlText"></span>
+                    <button class="share-copy" id="shareCopyBtn" aria-label="Copiar enlace">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" />
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="share-btns">
+                    <a class="share-svc" id="shareWhatsApp" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a class="share-svc" id="shareTelegram" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
+                        Telegram
+                    </a>
+                    <a class="share-svc" id="shareX" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                        X / Twitter
+                    </a>
+                    <a class="share-svc" id="shareEmail" href="#">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div><!-- /topbar-actions -->
 
+        <!-- Botones móviles visibles en pantallas estrechas -->
+        <div class="topbar-mob-group">
+            <button class="mob-share-btn tb-btn" id="mobShareBtn" aria-label="Compartir" title="Compartir">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                    <polyline points="16 6 12 2 8 6" />
+                    <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+            </button>
+            <button class="burger-btn tb-btn" id="burgerBtn" aria-label="Menú" aria-expanded="false" title="Menú">
+                <svg class="ic-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section con la identidad de EspaTV -->
+    <header class="hero">
+        <div class="hero-inner">
+            <button class="hero-mark icon-btn-video" data-video="https://espatv.github.io/media/espatv.mp4" aria-label="Ver vídeo de demostración de EspaTV" title="Ver vídeo de demostración de EspaTV">
+                <span class="hero-mark-wave"></span>
+                <div class="hero-mark-inner">
+                    <img class="hero-mark-img" src="https://espatv.github.io/img/espatv.png" alt="EspaTV">
+                </div>
+                <span class="hero-video-hint">Ver vídeo</span>
+            </button>
+            <h1><span class="espa-text">Espa</span><em>TV</em></h1>
+            <p class="hero-sub">Addon todo en uno de <strong>ESPAKODI</strong> para contenido en castellano: TDT, RTVE a la carta, YouTube, Dailymotion, radio, podcasts, catálogo de películas y series, filmoteca, agenda deportiva, noticias y mucho más.</p>
+
+            <div style="margin-top: 1.5rem; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <a class="hero-pill-btn" href="https://espatv.github.io/">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width: 16px; height: 16px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Web Principal
+                </a>
+                <a class="hero-pill-btn" href="https://t.me/espadaily" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width: 16px; height: 16px;"><path d="M21.5 2L2 9.5l7 3 2 7 3.5-4.5L19 18l2.5-16z"/></svg>
+                    Comunidad Telegram
+                </a>
+                <a class="hero-pill-btn" href="https://t.me/rubensdfa1laberot/?direct" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Contacto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap" style="max-width: 900px;">
+
+        <!-- TARJETA 1: INSTALACIÓN DESDE REPOSITORIO -->
+        <article class="instruction-box">
+            <div class="inst-card-head">
+                <div class="inst-card-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                </div>
+                <div class="inst-card-text">
+                    <h2 class="inst-card-title">Instalar desde el repositorio</h2>
+                    <div class="inst-card-sub">Método recomendado &middot; Recibe actualizaciones automáticas continuas</div>
+                </div>
+            </div>
+
+            <ol class="inst-steps">
+                <li>En Kodi: <strong>Ajustes</strong> &rarr; <strong>Explorador de archivos</strong> &rarr; <strong>Añadir fuente</strong>.</li>
+                <li>
+                    En <code>&lt;Ninguno&gt;</code> pega esta dirección exacta:<br>
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <span class="code-box">https://espakodi.github.io/espatv/</span>
+                        <button class="copy-btn" data-url="https://espakodi.github.io/espatv/" aria-label="Copiar URL del repositorio" style="display: inline-flex;"></button>
+                    </div>
+                    <div class="note-box">
+                        <strong>Importante:</strong> la dirección web debe terminar en <code>.io/espatv/</code>, no debe terminar en <code>.com</code>.
+                    </div>
+                </li>
+                <li>Como nombre de la fuente escribe <code>espatv</code> (o lo que prefieras) y pulsa <strong>OK</strong> / <strong>Aceptar</strong>.</li>
+                <li>
+                    Ve a <strong>Add-ons</strong> &rarr; <strong>icono de paquete</strong> (caja abierta en la esquina superior izquierda) &rarr; <strong>Instalar desde archivo zip</strong>.<br>
+                    <div class="note-box" style="margin-top: 8px;">
+                        <strong>Aviso de seguridad en Kodi:</strong> Si no tienes activadas fuentes de terceros, ve a <strong>Ajustes</strong> &rarr; <strong>Sistema</strong> &rarr; <strong>Add-ons</strong> &rarr; activa la casilla <em>"Orígenes desconocidos"</em>.
+                    </div>
+                </li>
+                <li>Selecciona la fuente <code>espatv</code> y pulsa sobre el archivo <code>repository.espatv-1.0.0.zip</code>.</li>
+                <li>Cuando aparezca la notificación "Add-on instalado", entra en <strong>Instalar desde repositorio</strong> &rarr; <strong>EspaTV Repository</strong> &rarr; <strong>Add-ons de vídeo</strong> &rarr; <strong>EspaTV</strong> &rarr; <strong>Instalar</strong>.</li>
+            </ol>
+        </article>
+
+        <!-- TARJETA 2: INSTALACIÓN DESDE ZIP MANUAL -->
+        <article class="instruction-box">
+            <div class="inst-card-head">
+                <div class="inst-card-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v11.5" />
+                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                        <path d="M8 12v-1" />
+                        <path d="M8 18v-2" />
+                        <path d="M8 7V6" />
+                        <circle cx="8" cy="20" r="2" />
+                    </svg>
+                </div>
+                <div class="inst-card-text">
+                    <h2 class="inst-card-title">Desde ZIP (instalación manual sin actualizaciones automáticas)</h2>
+                    <div class="inst-card-sub">Instalación directa sin repositorio &middot; Requiere actualizar manualmente</div>
+                </div>
+            </div>
+
+            <p style="color: var(--text-soft); font-size: 0.95rem; margin-bottom: 12px;">
+                Descarga directamente el archivo zip de la última versión. Esta vía <strong>no recibe actualizaciones automáticas</strong>.
+            </p>
+
+            <div class="direct-download-card">
+                <div class="file-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3 3 3-3"/></svg>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.98rem; color: var(--text);" id="latest-zip-name">plugin.video.espatv-4.5.0.zip</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mute);" id="latest-zip-sub">Última versión disponible (descarga directa sin pasar por GitHub Releases)</div>
+                    </div>
+                </div>
+                <a class="btn-direct-download" id="latest-zip-btn" href="https://github.com/espakodi/espatv/releases/download/v4.5.0/plugin.video.espatv-4.5.0.zip" download>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar ZIP
+                </a>
+            </div>
+
+            <p style="color: var(--text-soft); font-size: 0.95rem; margin: 14px 0 6px;">
+                Una vez descargado el archivo zip en tu dispositivo:
+            </p>
+            <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 0.95rem; color: var(--text); margin-bottom: 22px;">
+                En Kodi: <strong>Add-ons</strong> &rarr; <strong>icono de paquete</strong> &rarr; <strong>Instalar desde archivo zip</strong> &rarr; selecciona el archivo descargado.
+            </div>
+
+            <!-- Hashes de integridad solicitados por el usuario -->
+            <div style="margin: 22px 0;">
+                <div style="font-size: 0.92rem; font-weight: 600; color: var(--text); margin-bottom: 8px;">
+                    Verificación de integridad (v4.5.0): los hashes criptográficos exactos del archivo ZIP de la release:
+                </div>
+                <div class="hash-box">
+                    <div class="hash-row" style="margin-bottom: 6px;">
+                        <span><strong>MD5:</strong> <span class="hash-code">f06eec6b02a7c42fdbf8b11ee31144e8</span></span>
+                        <button class="copy-btn" data-url="f06eec6b02a7c42fdbf8b11ee31144e8" aria-label="Copiar hash MD5"></button>
+                    </div>
+                    <div class="hash-row">
+                        <span><strong>SHA256:</strong> <span class="hash-code">5a40b2b03ed34056276cdfd15759f2c176f3e045f926f9e07a927993e1bfe6ca</span></span>
+                        <button class="copy-btn" data-url="5a40b2b03ed34056276cdfd15759f2c176f3e045f926f9e07a927993e1bfe6ca" aria-label="Copiar hash SHA256"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aviso ya tenías el addon instalado a mano -->
+            <h3 class="inst-section-title" style="margin-top: 28px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="color: var(--primary);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/><circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/></svg>
+                Si ya tenías el addon instalado a mano
+            </h3>
+            <div class="note-box">
+                Kodi marca las instalaciones manuales y <strong>no las actualiza solas</strong>; para que empiece a recibir actualizaciones automáticas tienes que <strong>desinstalar el ZIP antiguo</strong> y repetir los pasos de arriba. Al instalar desde el repositorio, Kodi sustituye la copia anterior sin preguntarte nada.
+            </div>
+
+            <!-- Zip para instalar el repositorio -->
+            <h3 class="inst-section-title" style="margin-top: 28px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="color: var(--primary);"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                Zip para instalar el repositorio
+            </h3>
+            <p style="color: var(--text-soft); font-size: 0.95rem; margin-bottom: 12px;">
+                Si descargas este zip e instalas el repositorio desde archivo zip en Kodi, recibirás las actualizaciones automáticas normalmente sin necesidad de escribir la dirección URL en el explorador de archivos:
+            </p>
+            <div>
+                <a class="btn-direct-download" href="repository.espatv-1.0.0.zip" download>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    repository.espatv-1.0.0.zip
+                </a>
+            </div>
+        </article>
+
+        <!-- SECCIÓN 2: OTROS ADDONS DE ESPAKODI -->
+        <section class="section-separator">
+            <h2>Otros addons de EspaKodi</h2>
+        </section>
+
+        <!-- Grid de tarjetas de addons -->
+        <div class="grid">
+<div class="card reveal" data-icon="https://espatv.github.io/img/topzilla.jpg" data-name="TopZilla" data-sub="¿Qué vemos hoy?">
+<div class="card-top">
+<img alt="TopZilla" class="addon-icon" loading="lazy" src="https://espatv.github.io/img/topzilla.jpg"/>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">TopZilla</h2><span class="chip v">Vídeo</span><span class="chip t">Herramienta</span>
+</div>
+<div class="card-sub">¿Qué vemos hoy?</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">TopZilla muestra rankings, información y trailers de películas y series. No está pensado para ver películas con derechos de autor. Permite buscarlas, filtrarlas y guardar en tu biblioteca o consultar su ficha con dos clics, estés donde estés en tu Kodi.</div>
+<div class="source">
+<span class="src-lbl">Fuente</span>
+<span class="src-url">https://espatv.github.io/topzilla/</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://espatv.github.io/topzilla/"></button>
+</div>
+<div class="card-foot">
+<button class="btn-install" onclick="openModal(this)">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalarlo</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template class="install-tpl">
+<div class="step-lbl">Instalación vía repositorio</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Abre Kodi → <strong>Ajustes</strong>
+                                (engranaje) →
+                                <strong>Explorador de archivos</strong> → <strong>Añadir fuente</strong></span></li>
+<li><span class="snum">2</span><span class="stxt">Pulsa en <strong>&lt;Ninguno&gt;</strong> e
+                                introduce la dirección
+                                <code>https://espatv.github.io/topzilla/</code>, nómbrala <code>topzilla</code> y
+                                confirma</span></li>
+<li><span class="snum">3</span><span class="stxt">Ve a <strong>Add-ons</strong> → icono de
+                                paquete → <strong>Instalar desde archivo ZIP</strong></span></li>
+<li><span class="snum">4</span><span class="stxt">Selecciona la fuente <code>topzilla</code> →
+                                <code>repository.topzilla-x.x.x.zip</code></span></li>
+<li><span class="snum">5</span><span class="stxt">Ve a <strong>Instalar desde
+                                    repositorio</strong> → <strong>TopZilla Repository</strong> → <strong>Add-ons
+                                    de vídeo</strong> → <strong>TopZilla</strong> → <strong>Instalar</strong></span>
+</li>
+</ol>
+<div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/>
+<circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/>
+</svg><span>Sin el repositorio TopZilla funciona, pero no recibirá actualizaciones
+                            automáticas.</span></div>
+</template>
+</div>
+<div class="card reveal" data-icon="https://raw.githubusercontent.com/espakodi/ekgames/main/plugin.program.ekgames/icon.png" data-name="EKGames / Gamesek" data-sub="Juegos retro integrados y catálogo de emuladores para Kodi">
+<div class="card-top">
+<div style="display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; align-items: center;">
+<img alt="EKGames" class="addon-icon" loading="lazy" src="https://raw.githubusercontent.com/espakodi/ekgames/main/plugin.program.ekgames/icon.png" data-fallback-icon="gamepad" title="EKGames (v2.0)" style="width: 48px; height: 48px; border-radius: 12px;"/>
+<img alt="Gamesek" class="addon-icon" loading="lazy" src="https://raw.githubusercontent.com/espakodi/gamesek/main/plugin.program.gamesek/icon.png" data-fallback-icon="gamepad" title="Gamesek (v1.0)" style="width: 48px; height: 48px; border-radius: 12px;"/>
+</div>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">EKGames / Gamesek</h2>
+</div>
+<div class="card-sub">Juegos retro clásicos integrados y catálogo de emuladores</div>
+<div style="display: flex; gap: 6px; margin-top: 6px;">
+<span class="chip g">Juegos</span><span class="chip t">Emuladores</span>
+</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">
+Dos complementos desarrollados por RubénSDFA1laberot (EspaKodi) para jugar en Kodi:
+<div style="margin: 10px 0 12px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem;">
+<div><strong>EKGames (v2.0):</strong> 14 minijuegos clásicos jugables al instante sin emulador (Snake, 2048, Tetris, Buscaminas, Memoria, Solitario, Flappy, Pong, Invaders, Burbujas, Galaga, Asteroids y Pac-Man) con soporte para mando, teclado o controles táctiles en pantalla. Incluye además todo Gamesek integrado.</div>
+<div><strong>Gamesek (v1.0):</strong> Centro y catálogo de emuladores para Kodi explicados en español, con descarga automática de juegos libres de Archive.org, integración con RetroPlayer/IAGL, modo juego a pantalla completa y envío de ROMs desde el móvil.</div>
+</div>
+<div class="feat-lbl">Características principales</div>
+<ul class="feat">
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>14 juegos sin emulador:</b> integrados directamente en Kodi, listos para jugar de inmediato sin configuración previa.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Emuladores por sistema:</b> integración con RetroPlayer y lanzadores para las principales plataformas retro.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Juegos libres y Archive.org:</b> descarga y ejecución de títulos homebrew y de dominio público.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Envío desde el móvil:</b> subida sencilla de archivos y control adaptado a mando o teclado.</span></li>
+</ul>
+</div>
+<div class="source">
+<span class="src-lbl">EKGames</span>
+<span class="src-url">https://github.com/espakodi/ekgames</span>
+<button aria-label="Copiar enlace de EKGames" class="copy-btn" data-url="https://github.com/espakodi/ekgames"></button>
+</div>
+<div class="source" style="margin-top: -6px;">
+<span class="src-lbl">Gamesek</span>
+<span class="src-url">https://github.com/espakodi/gamesek</span>
+<button aria-label="Copiar enlace de Gamesek" class="copy-btn" data-url="https://github.com/espakodi/gamesek"></button>
+</div>
+<div class="card-foot" style="display: flex; flex-direction: column; gap: 8px;">
+<button class="btn-install" onclick="openModal(this)"
+        data-tpl="#tpl-ekgames"
+        data-name="EKGames"
+        data-sub="14 minijuegos clásicos jugables sin emulador + Gamesek integrado"
+        data-icon="https://raw.githubusercontent.com/espakodi/ekgames/main/plugin.program.ekgames/icon.png">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalar EKGames</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+<button class="btn-install" onclick="openModal(this)"
+        data-tpl="#tpl-gamesek"
+        data-name="Gamesek"
+        data-sub="Catálogo y centro de emuladores para Kodi"
+        data-icon="https://raw.githubusercontent.com/espakodi/gamesek/main/plugin.program.gamesek/icon.png">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalar Gamesek</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template id="tpl-ekgames">
+<div class="step-lbl">Instalación de EKGames en Kodi</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Descarga el archivo ZIP desde GitHub:<br><code>https://github.com/espakodi/ekgames/releases/latest</code><br><span style="font-size: 0.86rem; color: var(--muted);">(Archivo: <code>plugin.program.ekgames-2.0.0.zip</code>)</span></span></li>
+<li><span class="snum">2</span><span class="stxt">En Kodi ve a <strong>Ajustes</strong> (engranaje) → <strong>Add-ons</strong> → <strong>Instalar desde un archivo ZIP</strong></span></li>
+<li><span class="snum">3</span><span class="stxt">Selecciona el ZIP descargado y confirma la instalación. Dispondrás de 14 minijuegos clásicos listos para jugar sin emulador y acceso directo a Gamesek.</span></li>
+</ol>
+<div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/>
+<circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/>
+</svg><span>Compatible con Kodi 19 Matrix, Kodi 20 Nexus y Kodi 21 Omega. EKGames ya incluye Gamesek en su interior.</span></div>
+</template>
+<template id="tpl-gamesek">
+<div class="step-lbl">Instalación de Gamesek en Kodi</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Descarga el archivo ZIP desde GitHub:<br><code>https://github.com/espakodi/gamesek/releases/latest</code><br><span style="font-size: 0.86rem; color: var(--muted);">(Archivo: <code>plugin.program.gamesek-1.0.0.zip</code>)</span></span></li>
+<li><span class="snum">2</span><span class="stxt">En Kodi ve a <strong>Ajustes</strong> (engranaje) → <strong>Add-ons</strong> → <strong>Instalar desde un archivo ZIP</strong></span></li>
+<li><span class="snum">3</span><span class="stxt">Selecciona el ZIP descargado y confirma la instalación. Podrás configurar emuladores, descargar ROMs libres de Archive.org o subirlas desde el móvil.</span></li>
+</ol>
+<div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/>
+<circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/>
+</svg><span>Compatible con Kodi 19 Matrix, Kodi 20 Nexus y Kodi 21 Omega. Gestor de emuladores y lanzador de juegos.</span></div>
+</template>
+</div>
+<div class="card reveal" data-icon="https://raw.githubusercontent.com/espakodi/ekskin/main/skin.ekskin/resources/icon.png" data-name="EKSkin" data-sub="Skin para Kodi con 7 temas de escritorio">
+<div class="card-top">
+<img alt="EKSkin" class="addon-icon" loading="lazy" src="https://raw.githubusercontent.com/espakodi/ekskin/main/skin.ekskin/resources/icon.png" data-fallback-icon="skin"/>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">EKSkin</h2><span class="chip s">Skin</span>
+</div>
+<div class="card-sub">Skin para Kodi con 7 temas de escritorio</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">
+Skin ligera y personalizable para Kodi con 7 entornos de escritorio (Windows 95, Windows XP, Windows 7 Aero, Windows 10, Windows 11, Linux y Mac), widgets configurables, menú de inicio interactivo y accesos directos personalizados.
+<div class="feat-lbl">Características principales</div>
+<ul class="feat">
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>7 estilos de sistema operativo:</b> personaliza tu Kodi con la apariencia de Windows clásico, moderno, Linux o Mac.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Menú inicio y barra de tareas:</b> interfaz visual intuitiva para acceder a tus addons y contenido favorito.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Widgets y accesos rápidos:</b> configuración flexible de la pantalla principal para películas, series y TV.</span></li>
+</ul>
+</div>
+<div class="source">
+<span class="src-lbl">GitHub</span>
+<span class="src-url">https://github.com/espakodi/ekskin</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://github.com/espakodi/ekskin"></button>
+</div>
+<div class="card-foot">
+<button class="btn-install" onclick="openModal(this)">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalarlo</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template class="install-tpl">
+<div class="step-lbl">Instalación de la Skin</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Descarga el archivo ZIP de la release desde el repositorio en GitHub: <code>https://github.com/espakodi/ekskin</code></span></li>
+<li><span class="snum">2</span><span class="stxt">En Kodi ve a <strong>Ajustes</strong> (engranaje) → <strong>Add-ons</strong> → <strong>Instalar desde un archivo ZIP</strong></span></li>
+<li><span class="snum">3</span><span class="stxt">Selecciona el ZIP y cuando Kodi pregunte si deseas cambiar a la nueva interfaz, selecciona <strong>Sí</strong></span></li>
+</ol>
+<div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/>
+<circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/>
+</svg><span>Puedes alternar o volver a Estuary en cualquier momento desde Ajustes → Interfaz → Skin.</span></div>
+</template>
+</div>
+<div class="card reveal" data-icon="https://espatv.github.io/img/loiolink.jpg" data-name="loiolink" data-sub="Centro de control web y navaja suiza para tu Kodi">
+<div class="card-top">
+<img alt="loiolink" class="addon-icon" loading="lazy" src="https://espatv.github.io/img/loiolink.jpg"/>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">loiolink</h2><span class="chip t">Herramienta</span>
+</div>
+<div class="card-sub">Centro de control web y navaja suiza para tu Kodi</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">
+                    Un sistema privado y local que funciona sin instalar aplicaciones ni registrarse. Pensado para que
+                    Kodi sea más fácil y cómodo que nunca.
+                    <div class="feat-lbl">Características principales</div>
+<ul class="feat">
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Mando a distancia:</b> controla lo que estás viendo, navega por los menús o
+                                consulta y gestiona tus addons desde la web.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Toda tu colección:</b> navega por tus películas, series y música desde el
+                                navegador y reprodúcelas en la TV.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Streaming de Kodi al móvil:</b> envía el vídeo desde el televisor para verlo
+                                en la pantalla de tu móvil, tablet o PC.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Favoritos:</b> elimina, reordena o edita accesos directos a películas, series
+                                o secciones de addons desde el navegador.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Escribe sin usar el mando:</b> escribe búsquedas o enlaces largos en el
+                                navegador y aparecen al instante en Kodi.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Copiar y pegar:</b> pega texto en buscadores de Kodi o copia nombres de
+                                elementos con el menú contextual.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Envío de vídeos y emisiones en directo:</b> para reproducirlos al vuelo,
+                                grabarlos o guardarlos en local.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Escáner web y Telegram:</b> rastrea páginas y canales de Telegram para
+                                recopilar y reproducir contenidos y vídeos.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Instalación de addons:</b> envía ZIPs, repositorios o APKs desde el navegador
+                                para instalarlos al instante.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Grabación HLS:</b> graba transmisiones en directo o programa
+                                grabaciones.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Explorador de archivos:</b> navega por carpetas y gestiona fuentes.</span>
+</li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Apagado y reinicio:</b> apaga, reinicia o suspende el equipo
+                                remotamente.</span></li>
+<li><svg fill="none" stroke="currentColor" stroke-width="2.4" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg><span><b>Copia de seguridad:</b> guarda o restaura tus addons, favoritos y
+                                fuentes.</span></li>
+</ul>
+<div class="feat-more">¡Y mucho más! Pruébalo y descubre todo lo que puede hacer.</div>
+</div>
+<div class="source">
+<span class="src-lbl">Fuente</span>
+<span class="src-url">https://loiolo.io/</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://loiolo.io/"></button>
+</div>
+<div class="card-foot">
+<button class="btn-install" onclick="openModal(this)">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalarlo</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template class="install-tpl">
+<div class="step-lbl">Instalación vía repositorio</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Abre Kodi → <strong>Ajustes</strong>
+                                (engranaje) →
+                                <strong>Explorador de archivos</strong> → <strong>Añadir fuente</strong></span></li>
+<li><span class="snum">2</span><span class="stxt">Pulsa en <strong>&lt;Ninguno&gt;</strong> e
+                                introduce la dirección
+                                <code>https://loiolo.io/</code>, nómbrala <code>loiolink</code> y confirma</span></li>
+<li><span class="snum">3</span><span class="stxt">Ve a <strong>Add-ons</strong> → icono de
+                                paquete → <strong>Instalar desde archivo ZIP</strong></span></li>
+<li><span class="snum">4</span><span class="stxt">Selecciona la fuente <code>loiolink</code> →
+                                <code>repository.loiolink-x.x.x.zip</code></span></li>
+<li><span class="snum">5</span><span class="stxt">Ve a <strong>Instalar desde
+                                    repositorio</strong> → <strong>loiolink Repository</strong> → <strong>Add-ons
+                                    de programa</strong> → <strong>loiolink</strong> → <strong>Instalar</strong></span>
+</li>
+</ol>
+<div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round"/>
+<circle cx="12" cy="17" r="1.25" fill="currentColor" stroke="none"/>
+</svg><span>Si la pantalla parece colgada tras instalar el ZIP, espera 10-15 s y reintenta.
+                            Fuente alternativa: <code>https://espatv.github.io/loiolink/</code></span></div>
+</template>
+</div>
+<div class="card reveal" data-icon="https://espatv.github.io/img/flowfav.png" data-name="Flow FavManager" data-sub="Gestión avanzada de favoritos">
+<div class="card-top">
+<img alt="Flow FavManager" class="addon-icon" loading="lazy" src="https://espatv.github.io/img/flowfav.png"/>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">Flow FavManager</h2><span class="chip t">Herramienta</span>
+</div>
+<div class="card-sub">Gestión avanzada de favoritos</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">Flow FavManager mejora la experiencia de gestión de favoritos en Kodi. Permite
+                    organizarlos, personalizar su apariencia y las acciones que realizan. Incluye herramientas de copia
+                    de seguridad, un editor intuitivo, perfiles y ordenación por secciones, con opción de añadirlos
+                    desde el menú contextual de Kodi.</div>
+<div class="source">
+<span class="src-lbl">Fuente</span>
+<span class="src-url">https://fullstackcurso.github.io/Flow-FavManager/</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://fullstackcurso.github.io/Flow-FavManager/"></button>
+</div>
+<div class="card-foot">
+<button class="btn-install" onclick="openModal(this)">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalarlo</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template class="install-tpl">
+<div class="step-lbl">Instalación vía repositorio</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Abre Kodi → <strong>Ajustes</strong>
+                                (engranaje) →
+                                <strong>Explorador de archivos</strong> → <strong>Añadir fuente</strong></span></li>
+<li><span class="snum">2</span><span class="stxt">Pulsa en <strong>&lt;Ninguno&gt;</strong> e
+                                introduce la dirección
+                                <code>https://fullstackcurso.github.io/Flow-FavManager/</code>, nómbrala
+                                <code>flowfav</code> y confirma</span></li>
+<li><span class="snum">3</span><span class="stxt">Ve a <strong>Add-ons</strong> → icono de
+                                paquete → <strong>Instalar desde archivo ZIP</strong></span></li>
+<li><span class="snum">4</span><span class="stxt">Selecciona la fuente <code>flowfav</code> →
+                                <code>repository.flowfavmanager-x.x.x.zip</code></span></li>
+<li><span class="snum">5</span><span class="stxt">Ve a <strong>Instalar desde
+                                    repositorio</strong> → <strong>Flow FavManager Repository</strong> →
+                                <strong>Add-ons de programa</strong> → <strong>Flow FavManager</strong> →
+                                <strong>Instalar</strong></span></li>
+</ol>
+</template>
+</div>
+<div class="card reveal" data-icon="https://espatv.github.io/img/loiolog.png" data-name="loiolog" data-sub="Gestor avanzado de logs para Kodi">
+<div class="card-top">
+<button aria-label="Ver demo de loiolog" class="icon-btn-video" data-video="media/loiolog.mp4">
+<img alt="loiolog" class="addon-icon" loading="lazy" src="https://espatv.github.io/img/loiolog.png"/>
+<span class="play-badge"><svg viewbox="0 0 24 24">
+<polygon fill="currentColor" points="5 3 19 12 5 21 5 3"></polygon>
+</svg></span>
+</button>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">loiolog</h2><span class="chip t">Herramienta</span>
+</div>
+<div class="card-sub">Gestor avanzado de logs para Kodi</div>
+</div>
+</div>
+<div class="div"></div>
+<div class="card-body">Visualiza y busca en el log de Kodi con un visor de colores por severidad. Filtra
+                    por addon, texto o expresiones regulares. Exporta a TXT o JSON, comparte el log subiendo a internet
+                    o ábrelo en el móvil desde tu red local. Consulta estadísticas, compara errores entre sesiones y
+                    gestiona los logs anteriores.</div>
+<div class="source">
+<span class="src-lbl">Fuente</span>
+<span class="src-url">https://loioloio.github.io/loiolog/</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://loioloio.github.io/loiolog/"></button>
+</div>
+<div class="card-foot">
+<button class="btn-install" onclick="openModal(this)">
+<span class="lft"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="7 10 12 15 17 10"></polyline>
+<line x1="12" x2="12" y1="15" y2="3"></line>
+</svg>Cómo instalarlo</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</button>
+</div>
+<template class="install-tpl">
+<div class="step-lbl">Instalación vía repositorio</div>
+<ol class="steps">
+<li><span class="snum">1</span><span class="stxt">Abre Kodi → <strong>Ajustes</strong>
+                                (engranaje) →
+                                <strong>Explorador de archivos</strong> → <strong>Añadir fuente</strong></span></li>
+<li><span class="snum">2</span><span class="stxt">Pulsa en <strong>&lt;Ninguno&gt;</strong> e
+                                introduce la dirección
+                                <code>https://loioloio.github.io/loiolog/</code>, nómbrala <code>loiolog</code> y
+                                confirma</span></li>
+<li><span class="snum">3</span><span class="stxt">Ve a <strong>Add-ons</strong> → icono de
+                                paquete → <strong>Instalar desde archivo ZIP</strong></span></li>
+<li><span class="snum">4</span><span class="stxt">Selecciona la fuente <code>loiolog</code> →
+                                <code>repository.loiolog-x.x.x.zip</code></span></li>
+<li><span class="snum">5</span><span class="stxt">Ve a <strong>Instalar desde
+                                    repositorio</strong> → <strong>loiolog Repository</strong> → <strong>Add-ons de
+                                    programa</strong> → <strong>loiolog</strong> → <strong>Instalar</strong></span></li>
+</ol>
+</template>
+</div>
+<div class="card reveal" data-icon="https://espatv.github.io/favicon.svg" data-name="Más addons de EspaKodi" data-sub="Explora el catálogo completo en la web oficial">
+<div class="card-top">
+<div class="addon-icon" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #136b5e, #1a9382); color: #ffffff; border-radius: 14px; box-shadow: 0 4px 12px rgba(19, 107, 94, 0.28);">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="34" height="34">
+<path d="M3 10.5 12 3l9 7.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+<polyline points="9 22 9 12 15 12 15 22"/>
+</svg>
+</div>
+<div class="title-col">
+<div class="name-row">
+<h2 class="card-name">Más addons de EspaKodi</h2><span class="chip v">Web</span>
+</div>
+<div class="card-sub">Explora el catálogo completo en la web oficial</div>
+</div>
+</div>
+<div class="source" style="margin-top: 18px;">
+<span class="src-lbl">Web oficial</span>
+<span class="src-url">https://espatv.github.io/</span>
+<button aria-label="Copiar" class="copy-btn" data-url="https://espatv.github.io/"></button>
+</div>
+<div class="card-foot">
+<a class="btn-install" href="https://espatv.github.io/" style="text-decoration: none; display: flex; align-items: center; justify-content: space-between; font-weight: 600;">
+<span class="lft" style="display: inline-flex; align-items: center; gap: 8px;">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24" width="18" height="18">
+<line x1="5" y1="12" x2="19" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>Ir a la web principal</span>
+<svg class="arr" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+        </div>
+
+    </main>
+
+    <!-- Modal de instalación para las tarjetas de addons -->
+    <div class="modal-overlay" id="modalOverlay" onclick="overlayClick(event)">
+        <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+            <div class="modal-head">
+                <img class="modal-icon" id="modal-icon" src="" alt="">
+                <div class="modal-info">
+                    <div class="modal-name" id="modal-name"></div>
+                    <div class="modal-sub" id="modal-sub"></div>
+                </div>
+                <button class="modal-x" onclick="closeModal()" aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Modal de vídeo/demo si existe -->
+    <div class="video-overlay" id="videoOverlay" onclick="if(event.target===this)closeVideo()">
+        <div class="video-dialog">
+            <button class="video-close" onclick="closeVideo()" aria-label="Cerrar vídeo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <video id="videoPlayer" controls playsinline></video>
+        </div>
+    </div>
+
+    <!-- Footer continuista idéntico a espatv.github.io -->
+    <footer>
+        &copy; <strong><span class="espa-text">Espa</span><em><svg class="kodi-k-inline" viewBox="0 0 24 24" fill="none">
+                    <rect x="0" y="0" width="24" height="24" fill="url(#kodi-grad-inline)" mask="url(#k-mask-inline)" />
+                </svg>odi</em></strong><span class="footer-dot" aria-hidden="true"></span>Addons para Kodi en español<span class="footer-dot" aria-hidden="true"></span>Contacto: <a href="https://t.me/rubensdfa1laberot/?direct" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none; font-weight: 500;">@rubensdfa1laberot</a>
+    </footer>
+
+    <!-- Botón flotante Go To Top -->
+    <button class="btn-go-top" id="btnGoTop" aria-label="Volver arriba" title="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts de interactividad, temas, paletas, copiado, modal y auto-resolución de release -->
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var themeBtn = document.getElementById('themeBtn');
+            var themeIcon = document.getElementById('themeIcon');
+
+            var SUN = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+            var MOON = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+
+            function updateThemeIcon() {
+                var isDark = root.getAttribute('data-theme') === 'dark';
+                themeIcon.innerHTML = isDark ? SUN : MOON;
+                var themeLabel = document.getElementById('themeLabel');
+                if (themeLabel) {
+                    themeLabel.textContent = isDark ? 'Modo claro' : 'Modo oscuro';
+                }
+            }
+            updateThemeIcon();
+
+            themeBtn.addEventListener('click', function () {
+                var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                try { localStorage.setItem('espatv-theme', next); } catch (e) { }
+                updateThemeIcon();
+            });
+
+            var palettes = [
+                { id: 'teal', label: 'Teal' },
+                { id: 'indigo', label: 'Indigo' },
+                { id: 'burgundy', label: 'Burgundy' },
+                { id: 'forest', label: 'Forest' },
+                { id: 'terracotta', label: 'Terracotta' },
+                { id: 'noche', label: 'Noche' }
+            ];
+            var palBtn = document.getElementById('paletteBtn');
+            var palLabel = document.getElementById('paletteLabel');
+
+            function updatePaletteUI() {
+                var cur = root.getAttribute('data-palette') || 'teal';
+                var found = palettes.find(function (p) { return p.id === cur; }) || palettes[0];
+                palLabel.textContent = found.label;
+            }
+            updatePaletteUI();
+
+            palBtn.addEventListener('click', function () {
+                var cur = root.getAttribute('data-palette') || 'teal';
+                var idx = palettes.findIndex(function (p) { return p.id === cur; });
+                var next = palettes[(idx + 1) % palettes.length];
+                root.setAttribute('data-palette', next.id);
+                try { localStorage.setItem('espatv-palette', next.id); } catch (e) { }
+                updatePaletteUI();
+            });
+
+            // Menú Accesibilidad
+            var a11yBtn = document.getElementById('a11yBtn');
+            var a11yPanel = document.getElementById('a11yPanel');
+            var a11yOpts = [...document.querySelectorAll('.a11y-opt')];
+
+            function saveA11y() {
+                var active = a11yOpts.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; }).map(function (b) { return b.dataset.a11y; });
+                try { localStorage.setItem('espatv-a11y-v2', active.join(' ')); } catch (e) { }
+            }
+
+            try {
+                var savedA11y = localStorage.getItem('espatv-a11y-v2');
+                if (savedA11y !== null) {
+                    root.classList.remove('a11y-large', 'a11y-bold', 'a11y-contrast');
+                    savedA11y.split(' ').forEach(function (k) { if (k) root.classList.add('a11y-' + k); });
+                }
+            } catch (e) { }
+
+            a11yOpts.forEach(function (btn) {
+                var cls = 'a11y-' + btn.dataset.a11y;
+                btn.setAttribute('aria-pressed', String(root.classList.contains(cls)));
+                btn.addEventListener('click', function () {
+                    var on = !root.classList.contains(cls);
+                    root.classList.toggle(cls, on);
+                    btn.setAttribute('aria-pressed', String(on));
+                    saveA11y();
+                });
+            });
+
+            a11yBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var open = a11yPanel.classList.toggle('show');
+                a11yBtn.setAttribute('aria-expanded', String(open));
+            });
+            document.addEventListener('click', function () {
+                a11yPanel.classList.remove('show');
+                a11yBtn.setAttribute('aria-expanded', 'false');
+            });
+
+            // Gestión del botón y panel de compartir
+            var shareBtn = document.getElementById('shareBtn');
+            var sharePanel = document.getElementById('sharePanel');
+            var SHARE_URL = window.location.href;
+            var SHARE_TEXT = document.querySelector('meta[name="description"]') ? document.querySelector('meta[name="description"]').content : 'EspaTV · Instrucciones de instalación para Kodi';
+
+            var shareUrlText = document.getElementById('shareUrlText');
+            if (shareUrlText) shareUrlText.textContent = SHARE_URL;
+
+            var waBtn = document.getElementById('shareWhatsApp');
+            if (waBtn) waBtn.href = 'https://wa.me/?text=' + encodeURIComponent(SHARE_TEXT + ' ' + SHARE_URL);
+            var tgBtn = document.getElementById('shareTelegram');
+            if (tgBtn) tgBtn.href = 'https://t.me/share/url?url=' + encodeURIComponent(SHARE_URL) + '&text=' + encodeURIComponent(SHARE_TEXT);
+            var xBtn = document.getElementById('shareX');
+            if (xBtn) xBtn.href = 'https://x.com/intent/tweet?text=' + encodeURIComponent(SHARE_TEXT) + '&url=' + encodeURIComponent(SHARE_URL);
+            var mailBtn = document.getElementById('shareEmail');
+            if (mailBtn) mailBtn.href = 'mailto:?subject=' + encodeURIComponent('EspaTV · Instrucciones para Kodi') + '&body=' + encodeURIComponent(SHARE_TEXT + '\n\n' + SHARE_URL);
+
+            var shareCopyBtn = document.getElementById('shareCopyBtn');
+            var SHARE_COPY_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+            var SHARE_CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>';
+            if (shareCopyBtn) {
+                shareCopyBtn.addEventListener('click', function () {
+                    var restore = function () { shareCopyBtn.innerHTML = SHARE_COPY_SVG; shareCopyBtn.classList.remove('done'); };
+                    if (navigator.clipboard) {
+                        navigator.clipboard.writeText(SHARE_URL).then(function () {
+                            shareCopyBtn.innerHTML = SHARE_CHECK_SVG; shareCopyBtn.classList.add('done');
+                            setTimeout(restore, 1800);
+                        }).catch(function () { fallbackCopy(shareCopyBtn, SHARE_URL, restore); });
+                    } else { fallbackCopy(shareCopyBtn, SHARE_URL, restore); }
+                });
+            }
+
+            function closeShare() {
+                if (sharePanel) sharePanel.classList.remove('show');
+                if (shareBtn) shareBtn.setAttribute('aria-expanded', 'false');
+            }
+
+            if (shareBtn && sharePanel) {
+                shareBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (navigator.share) {
+                        navigator.share({ title: 'EspaTV · Instrucciones para Kodi', text: SHARE_TEXT, url: SHARE_URL }).catch(function () { });
+                    } else {
+                        var open = sharePanel.classList.toggle('show');
+                        shareBtn.setAttribute('aria-expanded', String(open));
+                    }
+                });
+                sharePanel.addEventListener('click', function (e) { e.stopPropagation(); });
+                document.addEventListener('click', closeShare);
+                document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeShare(); });
+            }
+        })();
+
+        // Modales de instalación
+        var modalOverlay = document.getElementById('modalOverlay');
+        var modalIcon = document.getElementById('modal-icon');
+        var modalName = document.getElementById('modal-name');
+        var modalSub = document.getElementById('modal-sub');
+        var modalBody = document.getElementById('modal-body');
+
+        function openModal(btn) {
+            var card = btn ? btn.closest('.card') : null;
+            var icon = (btn && btn.dataset.icon) || (card && card.dataset.icon) || (card && card.querySelector('.addon-icon') ? card.querySelector('.addon-icon').src : '');
+            var name = (btn && btn.dataset.name) || (card ? card.dataset.name : '');
+            var sub = (btn && btn.dataset.sub) || (card ? card.dataset.sub : '');
+            modalIcon.src = icon || '';
+            modalIcon.alt = name || '';
+            modalName.textContent = name || '';
+            modalSub.textContent = sub || '';
+
+            var tpl = null;
+            if (btn && btn.dataset.tpl) {
+                tpl = (card ? card.querySelector(btn.dataset.tpl) : null) || document.querySelector(btn.dataset.tpl);
+            }
+            if (!tpl && card) {
+                tpl = card.querySelector('template.install-tpl');
+            }
+            modalBody.innerHTML = tpl ? tpl.innerHTML : '';
+            modalOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modalOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function overlayClick(e) {
+            if (e.target === modalOverlay) closeModal();
+        }
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+        // Popup modal de vídeo lazy (carga diferida bajo demanda sin lag inicial)
+        var videoOverlay = document.getElementById('videoOverlay');
+        var videoPlayer = document.getElementById('videoPlayer');
+
+        function openVideo(src) {
+            if (!src || !videoPlayer || !videoOverlay) return;
+            videoPlayer.preload = 'auto';
+            videoPlayer.src = src;
+            videoPlayer.play().catch(function () { });
+            videoOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideo() {
+            if (!videoPlayer || !videoOverlay) return;
+            videoOverlay.classList.remove('open');
+            videoPlayer.pause();
+            videoPlayer.removeAttribute('src');
+            videoPlayer.load();
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.icon-btn-video').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var src = btn.dataset.video;
+                if (src) openVideo(src);
+            });
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && videoOverlay && videoOverlay.classList.contains('open')) {
+                closeVideo();
+            }
+        });
+
+        // Botones de copia con feedback visual
+        var COPY_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+        var DONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+        document.querySelectorAll('.copy-btn').forEach(function (btn) {
+            btn.innerHTML = COPY_SVG;
+            btn.addEventListener('click', function () {
+                var url = btn.dataset.url;
+                var restore = function () { btn.innerHTML = COPY_SVG; btn.classList.remove('done'); };
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(url).then(function () {
+                        btn.innerHTML = DONE_SVG; btn.classList.add('done');
+                        setTimeout(restore, 1800);
+                    }).catch(function () { fallbackCopy(btn, url, restore); });
+                } else { fallbackCopy(btn, url, restore); }
+            });
+        });
+        function fallbackCopy(btn, url, restore) {
+            var t = document.createElement('textarea');
+            t.value = url; document.body.appendChild(t); t.select();
+            document.execCommand('copy'); t.remove();
+            btn.innerHTML = DONE_SVG; btn.classList.add('done');
+            setTimeout(restore, 1800);
+        }
+
+        // Animación de entrada de las tarjetas
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e, i) {
+                if (e.isIntersecting) {
+                    setTimeout(function () { e.target.classList.add('in'); }, (i % 4) * 60);
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.07 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+        // Fallback para imágenes de addons que no cargan (ej. GitHub raw con rate limit o 404)
+        document.querySelectorAll('img.addon-icon[data-fallback-icon]').forEach(function(img) {
+            var type = img.getAttribute('data-fallback-icon');
+            var ICONS = {
+                'gamepad': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="34" height="34"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 10v4M10 12h4M17 12h.01M15 10h.01"/></svg>',
+                'skin': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="34" height="34"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h1M14 9h1M9 12h6M9 15h4"/></svg>'
+            };
+            var svgStr = ICONS[type] || ICONS['gamepad'];
+            img.addEventListener('error', function() {
+                var div = document.createElement('div');
+                div.className = 'addon-icon addon-icon-fallback';
+                div.innerHTML = svgStr;
+                img.parentNode.replaceChild(div, img);
+            });
+            // Si ya falló antes de que el handler se registrase (caché de fallo)
+            if (img.complete && img.naturalWidth === 0) {
+                var div = document.createElement('div');
+                div.className = 'addon-icon addon-icon-fallback';
+                div.innerHTML = svgStr;
+                img.parentNode.replaceChild(div, img);
+            }
+        });
+
+        // Auto-resolución de la última versión del zip de GitHub Releases para descarga directa
+        (function() {
+            fetch('https://api.github.com/repos/espakodi/espatv/releases/latest')
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (data && data.assets && data.assets.length) {
+                        var zipAsset = data.assets.find(function(a) { return a.name.endsWith('.zip') && a.name.indexOf('plugin.video.espatv') !== -1; });
+                        if (!zipAsset) {
+                            zipAsset = data.assets.find(function(a) { return a.name.endsWith('.zip'); });
+                        }
+                        if (zipAsset) {
+                            var btn = document.getElementById('latest-zip-btn');
+                            var nameEl = document.getElementById('latest-zip-name');
+                            var subEl = document.getElementById('latest-zip-sub');
+                            if (btn) btn.href = zipAsset.browser_download_url;
+                            if (nameEl) nameEl.textContent = zipAsset.name;
+                            if (subEl) subEl.textContent = 'Versión ' + (data.tag_name || '') + ' directa de GitHub (sin pasar por Releases)';
+                        }
+                    }
+                })
+                .catch(function(e) {
+                    // Si la API tiene rate limit o no hay red, el link por defecto v4.5.0 ya funciona perfectamente
+                });
+        })();
+        // Menú hamburguesa y controles móviles de la topbar
+        var burgerBtn = document.getElementById('burgerBtn');
+        var topbarActions = document.getElementById('topbarActions');
+        var mobShareBtn = document.getElementById('mobShareBtn');
+
+        if (mobShareBtn) {
+            mobShareBtn.addEventListener('click', function () {
+                var shareUrl = window.location.href;
+                var shareText = 'EspaTV · Addon oficial y complementos de EspaKodi';
+                if (navigator.share) {
+                    navigator.share({ title: document.title, text: shareText, url: shareUrl }).catch(function () {});
+                } else if (navigator.clipboard) {
+                    navigator.clipboard.writeText(shareUrl);
+                }
+            });
+        }
+
+        if (burgerBtn && topbarActions) {
+            function closeBurger() {
+                topbarActions.classList.remove('mobile-open');
+                burgerBtn.setAttribute('aria-expanded', 'false');
+            }
+            burgerBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = topbarActions.classList.toggle('mobile-open');
+                burgerBtn.setAttribute('aria-expanded', String(isOpen));
+            });
+            document.addEventListener('click', function (e) {
+                if (!topbarActions.contains(e.target) && e.target !== burgerBtn) {
+                    closeBurger();
+                }
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeBurger();
+            });
+        }
+
+        // Botón flotante Go To Top (optimizado para escritorio y móvil)
+        var btnGoTop = document.getElementById('btnGoTop');
+        if (btnGoTop) {
+            function updateGoTop() {
+                var y = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                if (y > 200) {
+                    btnGoTop.classList.add('visible');
+                } else {
+                    btnGoTop.classList.remove('visible');
+                }
+            }
+            window.addEventListener('scroll', updateGoTop, { passive: true });
+            window.addEventListener('touchmove', updateGoTop, { passive: true });
+            window.addEventListener('resize', updateGoTop, { passive: true });
+            btnGoTop.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            updateGoTop();
+        }
+    </script>
 </body>
 
 </html>
